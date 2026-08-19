@@ -1,0 +1,37 @@
+.hero-section-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 500px;
+  height: auto;
+  transition: transform 0.3s;
+}
+.hero-image:hover {
+  transform: translateY(-5px);
+}
+
+.hero-section-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.hero-section-card p {
+  margin: 0;
+  color: #666;
+}

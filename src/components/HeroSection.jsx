@@ -5,17 +5,16 @@ function HeroSection() {
     <section className="hero-section">
       <div className="hero-left">
         <h1>Hej, jeg er Julie</h1>
-        <p>Julie Wendelboe Bøcher</p>
-        <p>Aarhus, Danmark</p>
         <p>3. Semester Multimediedesigner</p>
-        </div>
-        <div className="hero-right">
+        <p>Aarhus, Danmark</p>
+      </div>
+      <div className="hero-right">
         <img
           className="hero-image"
-          src={`${import.meta.env.BASE_URL}mecaracter.png`}
+          src={`${import.meta.env.BASE_URL}mecaractersketchedred.png`}
           alt="hero-poster"
         />
-        </div>
+      </div>
     </section>
   );
 }

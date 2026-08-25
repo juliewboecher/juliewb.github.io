@@ -17,7 +17,7 @@ function Navbar() {
       <div className="site-header">
         <a className="brand" href="#hero" aria-label="Forside">
           <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Logo" />
-          JULIE WENDELBOE BØCHER
+          JULIE WENDELBOE
         </a>
 
         <nav className="site-nav" aria-label="Primær navigation">

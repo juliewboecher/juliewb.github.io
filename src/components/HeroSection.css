@@ -19,14 +19,9 @@
 }
 
 .hero-image {
-  width: 500px;
+  width: 800px;
   height: auto;
   transition: transform 0.3s;
-}
-
-.hero-section-card h2 {
-  margin: 0.5rem 0;
-  font-size: 1.5rem;
 }
 
 .hero-section-card p {

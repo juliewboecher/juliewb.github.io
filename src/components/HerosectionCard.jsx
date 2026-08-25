@@ -12,7 +12,7 @@ function HerosectionCard() {
         <div className="hero-right">
         <img
           className="hero-image"
-          src={`${import.meta.env.BASE_URL}heroposter.png`}
+          src={`${import.meta.env.BASE_URL}mecaractor.png`}
           alt="hero-poster"
         />
         </div>

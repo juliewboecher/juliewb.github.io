@@ -28,3 +28,32 @@
   margin: 0;
   color: #666;
 }
+
+.hero-star1, .hero-star2, .hero-star3 {
+  width: 60px;
+  height: auto;
+  position: absolute;
+}
+
+.hero-star1 {
+  top: 10rem;
+  left: 60rem;
+}
+
+.hero-star2 {
+  top: 20rem;
+  left: 80rem;
+}
+
+.hero-star3 {
+  top: 30rem;
+  left: 50rem;
+}
+
+.hero-star1, .hero-star2, .hero-star3 {
+  transition: transform 2s ease;
+}
+
+.hero-star1:hover, .hero-star2:hover, .hero-star3:hover {
+  transform: rotate(1080deg);
+}

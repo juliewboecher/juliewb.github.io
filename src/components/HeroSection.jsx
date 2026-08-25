@@ -1,8 +1,8 @@
-import "./HerosectionCard.css";
+import "./HeroSection.css";
 
-function HerosectionCard() {
+function HeroSection() {
   return (
-    <section className="hero-section-card">
+    <section className="hero-section">
       <div className="hero-left">
         <h1>Hej, jeg er Julie</h1>
         <p>Julie Wendelboe Bøcher</p>
@@ -12,11 +12,11 @@ function HerosectionCard() {
         <div className="hero-right">
         <img
           className="hero-image"
-          src={`${import.meta.env.BASE_URL}mecaractor.png`}
+          src={`${import.meta.env.BASE_URL}mecaracter.png`}
           alt="hero-poster"
         />
         </div>
     </section>
   );
 }
-export default HerosectionCard;
+export default HeroSection;

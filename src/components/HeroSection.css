@@ -1,11 +1,12 @@
-.hero-section-card {
+.hero-section {
+  padding: 3rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-left {
-  padding: 2rem;
+  
   justify-content: center;
   align-items: center;
 }
@@ -13,7 +14,7 @@
 .hero-right {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -21,9 +22,6 @@
   width: 500px;
   height: auto;
   transition: transform 0.3s;
-}
-.hero-image:hover {
-  transform: translateY(-5px);
 }
 
 .hero-section-card h2 {

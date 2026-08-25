@@ -15,14 +15,15 @@ function Navbar() {
   return (
     <header className="site-header-box">
       <div className="site-header">
-        <NavLink className="brand" to="/" aria-label="Forside">
+        <a className="brand" href="#hero" aria-label="Forside">
           <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Logo" />
-          JULIE WENDELBOE BØCHER
-        </NavLink>
+          JULIE WENDELBOE
+        </a>
 
         <nav className="site-nav" aria-label="Primær navigation">
-          <NavLink to="/">PROJEKTER</NavLink>
-
+          <a href="#projects">PROJEKTER</a>
+          <a href="#about">OM MIG</a>
+          <a href="#contact">KONTAKT</a>
         </nav>
       </div>
     </header>

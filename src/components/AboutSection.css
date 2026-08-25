@@ -1,0 +1,9 @@
+
+
+.about-section {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 3rem;
+}

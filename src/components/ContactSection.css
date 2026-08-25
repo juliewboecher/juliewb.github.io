@@ -1,0 +1,20 @@
+.contact-section {
+  padding: 10rem 3rem;
+  background-color: #1f1f1f;
+}
+
+.contact-section h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-section p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.contact-section a {
+  color: #fff;
+  text-decoration: underline;
+}

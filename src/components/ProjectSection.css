@@ -1,12 +1,42 @@
-
 .project-section {
-  padding: 3rem 3rem;
+  margin: 0 3rem;
 }
 
 .project-cards {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 4rem;
 }
 
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Bytter plads på billede og tekst */
+.project-card.reversed {
+  flex-direction: row-reverse;
+}
+
+.project-card-left,
+.project-card-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-image {
+  width: 600px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .project-card,
+  .project-card.reversed {
+    flex-direction: column;
+  }
+}

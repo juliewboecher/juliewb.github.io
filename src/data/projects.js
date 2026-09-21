@@ -28,7 +28,7 @@ const projects = [
     description:
       "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
     tags: ["Design", "Frontend", "Proces"],
-    image: `${import.meta.env.BASE_URL}smaglosmock2.png`,
+    image: `${import.meta.env.BASE_URL}nopicyet.svg`,
     links: [
       {
         label: "Eksempel-link",

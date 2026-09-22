@@ -21,7 +21,11 @@ function Navbar() {
         </a>
 
         <nav className="site-nav" aria-label="Primær navigation">
-          <a href="https://drive.google.com/file/d/12-X2vjnTZDHkEH8z-2AzVZTr2TMhNkLN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1I9TY_-IeQnHpx8SX5R-WC2tunJMVJGuT/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             CV
           </a>
           <a href="#projects">PROJEKTER</a>

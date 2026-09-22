@@ -1,3 +1,4 @@
+
 .hero-section {
   padding: 3rem;
   display: flex;
@@ -44,4 +45,35 @@
 .hero-section-card p {
   margin: 0;
   color: #666;
+}
+
+@media (max-width: 720px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .hero-left {
+    gap: 1rem; /* mindre luft mellem overskrift og tekst på små skærme */
+  }
+
+  .hero-left-top h1 {
+    font-size: 3rem; /* mindre overskrift på små skærme */
+    line-height: 1.2;
+  }
+
+  .hero-left-bottom p {
+    line-height: 1.5; /* bedre læsbarhed på små skærme */
+  }
+
+  .hero-right {
+    justify-content: center; /* centrer billedet på små skærme */
+    margin-top: 2rem; /* lidt luft over billedet */
+  }
+
+  .hero-image {
+    width: 100%; /* billedet fylder hele bredden på små skærme */
+    max-width: none; /* fjern max-width begrænsningen */
+    transform: translateX(0); /* fjern oversættelsen på små skærme */
+  }
 }

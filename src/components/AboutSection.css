@@ -7,3 +7,14 @@
   justify-content: space-between;
   gap: 3rem;
 }
+
+.about-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-image {
+  max-width: 1000px;
+  height: auto;
+}

@@ -94,21 +94,7 @@ li {
 
 
 @media (max-width: 720px) {
-  .site-header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .site-nav {
-    justify-content: flex-start;
-  }
-
   .page {
-    padding-top: 2rem;
-  }
-
-  .hero-section {
-    min-height: auto;
     padding-top: 2rem;
   }
 }

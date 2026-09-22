@@ -21,7 +21,9 @@ function Navbar() {
         </a>
 
         <nav className="site-nav" aria-label="Primær navigation">
-          <a href="#CV">CV</a>
+          <a href="https://drive.google.com/file/d/12-X2vjnTZDHkEH8z-2AzVZTr2TMhNkLN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            CV
+          </a>
           <a href="#projects">PROJEKTER</a>
           <a href="#about">OM MIG</a>
           <a href="#contact">KONTAKT</a>

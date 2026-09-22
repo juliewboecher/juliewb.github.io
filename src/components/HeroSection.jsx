@@ -22,21 +22,6 @@ function HeroSection() {
           src={`${import.meta.env.BASE_URL}redportrait.png`}
           alt="hero-poster"
         />
-        <img
-          className="hero-star1"
-          src={`${import.meta.env.BASE_URL}staryellow.svg`}
-          alt="star"
-        />
-        <img
-          className="hero-star2"
-          src={`${import.meta.env.BASE_URL}staryellow.svg`}
-          alt="star"
-        />
-        <img
-          className="hero-star3"
-          src={`${import.meta.env.BASE_URL}staryellow.svg`}
-          alt="star"
-        />
       </div>
     </section>
   );

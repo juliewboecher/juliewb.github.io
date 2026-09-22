@@ -3,7 +3,10 @@ import "./ContactSection.css";
 function ContactSection() {
   return (
     <section id="contact" className="contact-section">
-      <h2>Kontakt</h2>
+      <div className="contact-left">
+        <h2>Kontakt</h2>
+      </div>
+      <div className="contact-right">
       <p>mail: julie@boecher.dk</p>
       <p>telefon: +45 25124076</p>
       <p>
@@ -16,7 +19,8 @@ function ContactSection() {
         GitHub:{" "}
         <a href="https://github.com/juliewboecher">github.com/juliewboecher</a>
       </p>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
 export default ContactSection;

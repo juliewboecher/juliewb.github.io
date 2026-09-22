@@ -8,9 +8,9 @@ function ProjectCard({ project }) {
         <img className="project-image" src={`${image}`} alt={title} />
       </div>
       <div className="project-card-right">
+        <h2>{title}</h2>
         <p>{year}</p>
         <p>{tags.join(", ")}</p>
-        <h2>{title}</h2>
         <p>{description}</p>
         <ul className="project-links">
           {links.map((link) => (

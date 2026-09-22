@@ -1,12 +1,8 @@
 .contact-section {
   padding: 10rem 3rem;
   background-color: #1f1f1f;
-}
-
-.contact-section h2 {
-  color: #fff;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-section p {
@@ -17,4 +13,15 @@
 .contact-section a {
   color: #fff;
   text-decoration: underline;
+}
+
+.contact-left h2 {
+  color: #fff;
+  font-size: 12rem;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

@@ -1,59 +1,47 @@
 .hero-section {
-  padding: 3rem 3rem;
+  padding: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* eller center */
   align-items: center;
+  max-width: 1400px; /* eller hvad du vil have sektionen max skal være */
+  margin: 0 auto;
 }
 
 .hero-left {
-  
-  justify-content: center;
-  align-items: center;
+  flex: 0 1 auto; /* tager kun den plads den behøver */
+  display: flex;
+  flex-direction: column;
+  gap: 20rem; /* giver luft mellem overskrift og tekst */
+}
+
+.hero-left-top h1 {
+  font-size: 4.6rem;
+  color: var(--black);
+  line-height: 0.5;
+}
+
+.hero-left-bottom p {
+  margin-top: 1rem;
+  line-height: 0.5;
 }
 
 .hero-right {
-  flex: 1;
+  flex: 0 0 auto; /* vigtig: lad ikke højresiden krympe */
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .hero-image {
-  width: 800px;
+  width: 800px; /* eller 1000px / 1100px – prøv dig frem */
+  max-width: 100%; /* så den ikke går ud over skærmen på mindre skærme */
   height: auto;
   transition: transform 0.3s;
+  margin-top: 2rem;
+  transform: translateX(4rem);
 }
 
 .hero-section-card p {
   margin: 0;
   color: #666;
-}
-
-.hero-star1, .hero-star2, .hero-star3 {
-  width: 60px;
-  height: auto;
-  position: absolute;
-}
-
-.hero-star1 {
-  top: 10rem;
-  left: 60rem;
-}
-
-.hero-star2 {
-  top: 20rem;
-  left: 80rem;
-}
-
-.hero-star3 {
-  top: 30rem;
-  left: 50rem;
-}
-
-.hero-star1, .hero-star2, .hero-star3 {
-  transition: transform 2s ease;
-}
-
-.hero-star1:hover, .hero-star2:hover, .hero-star3:hover {
-  transform: rotate(1080deg);
 }

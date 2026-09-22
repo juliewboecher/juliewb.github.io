@@ -1,0 +1,53 @@
+.project-link {
+  background-color: var(--black);
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  margin-right: 1rem;
+}
+
+.project-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.project-card-left,
+.project-card-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-image {
+  width: 600px;
+  height: auto;
+  
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .project-card,
+  .project-card.reversed {
+    flex-direction: column;
+  }
+}

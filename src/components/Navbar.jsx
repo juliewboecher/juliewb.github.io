@@ -21,6 +21,7 @@ function Navbar() {
         </a>
 
         <nav className="site-nav" aria-label="Primær navigation">
+          <a href="#CV">CV</a>
           <a href="#projects">PROJEKTER</a>
           <a href="#about">OM MIG</a>
           <a href="#contact">KONTAKT</a>

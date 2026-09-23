@@ -5,9 +5,9 @@ const projects = [
     year: "2026",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
-      "Optimeringsprojekt med fokus på tilmeldningsflow og fetch af Supabase data.",
-    tags: ["React", "Supabase", "Fejlhåndtering"],
-    image: `${import.meta.env.BASE_URL}vuuh.png`,
+      "De største optimeringmuligheder er ved “demo-ordre”, “succes-side”,“efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step.",
+    tags: ["Figma Prototype", "User flow", "Onboarding"],
+    image: `${import.meta.env.BASE_URL}vuuhlogo.svg`,
     links: [
       {
         label: "Figma optimeret prototype",
@@ -25,7 +25,7 @@ const projects = [
     year: "2026",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
-      "Optimeringsprojekt med fokus på tilmeldningsflow og fetch af Supabase data.",
+      "Optimeringsprojekt med fokus på tilmeldningsflow og fetch af Supabase data. Fokus på fejlhåndtering i form af skeleton, 404 page og error page. Fokus på accessibility, i form af semantisk html.",
     tags: ["React", "Supabase", "Fejlhåndtering"],
     image: `${import.meta.env.BASE_URL}mellemrum.png`,
     links: [
@@ -47,12 +47,16 @@ const projects = [
       "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
     description:
       "I mit arbejde som SoMe Manager, planlægger jeg, i dialog med Café Smagløs driftschef, hvad og hvornår indhold deles. Jeg er komfortabel i at have en stor del af ansvaret i planlægningen og eksekveringen. Tilgang: Hvordan kan jeg skabe en rød tråd gennem caféens optræden på sociale medier? Og hvordan kan jeg skabe indhold på virksomhedens sociale medier, som skaber værdi for seerne og giver dem lyst til at besøge caféen?",
-    tags: ["Design", "Frontend", "Proces"],
+    tags: ["Content Creation", "Videoredigering", "Performance-analyse"],
     image: `${import.meta.env.BASE_URL}smaglos.svg`,
     links: [
       {
         label: "Cafe Smagløs Instagram",
         href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+      },
+      {
+        label: "Testimonial",
+        href: "https://drive.google.com/file/d/1Yin8p9XTVMgYHOkbEpmXosZn7GSUySH5/view?usp=sharing",
       },
     ],
   },
@@ -64,7 +68,7 @@ const projects = [
       "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
     description:
       "Beskriv problemet, Gemly er en webapp som samler søgning og filtrering, organisering af fundne steder, rutevejledning og deling af de skjulte perler, de selv finder.“Hvordan kan vi hjælpe vores målgruppe i deres research og planlægning efter at finde mindre kendte steder at besøge, når de rejser? Og hvordan skaber vi en brandidentitet som giver appen værdi for brugerne?”, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
-    tags: ["Design", "Frontend", "Proces"],
+    tags: ["Konceptudvikling", "React", "Brandidentitet", "Onboarding"],
     image: `${import.meta.env.BASE_URL}gemly.svg`,
     links: [
       {
@@ -85,7 +89,7 @@ const projects = [
       "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
     description:
       "Story Hangers er et projekt, der fokuserer på at forbedre kundeoplevelsen i detailhandlen ved hjælp af innovative designløsninger.",
-    tags: ["Design", "Frontend", "Proces"],
+    tags: ["User Research", "Kundeoplevelse", "React"],
     image: `${import.meta.env.BASE_URL}story.svg`,
     links: [
       {

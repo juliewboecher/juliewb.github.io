@@ -22,7 +22,7 @@ function Navbar() {
 
         <nav className="site-nav" aria-label="Primær navigation">
           <a
-            href="https://drive.google.com/file/d/1I9TY_-IeQnHpx8SX5R-WC2tunJMVJGuT/view?usp=sharing"
+            href="https://drive.google.com/file/d/13H77MkcMRVG0EkIH1_8sY9AV0-mWy5BG/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

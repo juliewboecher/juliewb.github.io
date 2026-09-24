@@ -44,10 +44,71 @@
   display: block;
 }
 
-/* Mobil */
-@media (max-width: 768px) {
-  .project-card,
-  .project-card.reversed {
+@media (max-width: 720px) {
+  .project-card {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .project-card-left {
+    width: 100%;
+  }
+
+  .project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .project-card-right {
+    width: 100%;
+  }
+
+  .project-card-right h2 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+  }
+
+  .project-card-right p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 0 0.6rem;
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 1rem 0 0;
+    list-style: none;
+  }
+
+  .project-link {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .project-card-right h2 {
+    font-size: 2rem;
+  }
+
+  .project-card-right p {
+    font-size: 0.85rem;
+    line-height: 1.35;
   }
 }

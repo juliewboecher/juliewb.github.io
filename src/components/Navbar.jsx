@@ -17,7 +17,8 @@ function Navbar() {
       <div className="site-header">
         <a className="brand" href="#hero" aria-label="Forside">
           <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Logo" />
-          JULIE WENDELBOE
+
+          <span className="brand-name">JULIE WENDELBOE</span>
         </a>
 
         <nav className="site-nav" aria-label="Primær navigation">
@@ -28,6 +29,7 @@ function Navbar() {
           >
             CV
           </a>
+
           <a href="#projects">PROJEKTER</a>
           <a href="#about">OM MIG</a>
           <a href="#contact">KONTAKT</a>

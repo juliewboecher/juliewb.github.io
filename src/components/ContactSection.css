@@ -25,3 +25,37 @@
   flex-direction: column;
   align-items: flex-end;
 }
+
+@media (max-width: 720px) {
+
+  .contact-section {
+    width: 100%;
+    max-width: none;
+
+    padding: 4rem 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact-left h2 {
+    font-size: clamp(4rem, 18vw, 7rem);
+    line-height: 0.8;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-right p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-right a {
+    overflow-wrap: anywhere;
+  }
+}

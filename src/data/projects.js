@@ -19,7 +19,15 @@ const projects = [
         href: "https://drive.google.com/file/d/1r6ZC2bulI5YFLgJ1n-_2rd0doWEptNk5/view?usp=sharing",
       },
     ],
+    title2: "Udfordring",
+    description2:
+      "Overordnet vurdering: UX-Audit tager udgangspunkt i persona 1 og viser at onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”, “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen: Brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.",
+    title3: "Undersøgelse og prioritering",
+    description3:
+      "Muligheden: At appen kan opstilles selvstændigt. Minimere steps Tydeliggøre step for step, hvor brugeren skal klikke for at fortsætte. Eksempel: “Fjern",
+      
   },
+
   {
     id: 2,
     slug: "Mellemrum",

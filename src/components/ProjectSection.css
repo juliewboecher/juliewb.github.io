@@ -1,3 +1,14 @@
 .project-section {
   margin: 0 3rem;
 }
+
+.project-card {
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}

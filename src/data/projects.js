@@ -7,7 +7,7 @@ const projects = [
     description:
       "De største optimeringmuligheder er ved “demo-ordre”, “succes-side”,“efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer: Brugeren kan ikke selvstændigt komme videre - de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step.",
     tags: ["Figma Prototype", "User flow", "Onboarding"],
-    image: `${import.meta.env.BASE_URL}vuuhlogo.svg`,
+    image: `${import.meta.env.BASE_URL}Vuuhlogo.png`,
     links: [
       {
         label: "Figma optimeret prototype",
@@ -27,7 +27,27 @@ const projects = [
     description:
       "Optimeringsprojekt med fokus på tilmeldningsflow og fetch af Supabase data. Fokus på fejlhåndtering i form af skeleton, 404 page og error page. Fokus på accessibility, i form af semantisk html.",
     tags: ["React", "Supabase", "Fejlhåndtering"],
-    image: `${import.meta.env.BASE_URL}mellemrum.png`,
+    image: `${import.meta.env.BASE_URL}Mellemrumlogo.png`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://juliewboecher.github.io/mellemrum/",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/juliewboecher/mellemrum.git",
+      },
+    ],
+  },
+  {
+    slug: "La Rouge",
+    title: "La Rouge",
+    year: "2026",
+    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
+    description:
+      "Optimeringsprojekt med fokus på tilmeldningsflow og fetch af Supabase data. Fokus på fejlhåndtering i form af skeleton, 404 page og error page. Fokus på accessibility, i form af semantisk html.",
+    tags: ["React", "Supabase", "Fejlhåndtering"],
+    image: `${import.meta.env.BASE_URL}Larouge.png`,
     links: [
       {
         label: "Live site",

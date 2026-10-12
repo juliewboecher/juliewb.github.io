@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: 1,
     slug: "Vuuh, Optimerings-case",
     title: "Vuuh, Optimerings-case",
     year: "2026",
@@ -20,6 +21,7 @@ const projects = [
     ],
   },
   {
+    id: 2,
     slug: "Mellemrum",
     title: "Mellemrum",
     year: "2026",
@@ -40,6 +42,7 @@ const projects = [
     ],
   },
   {
+    id: 3,
     slug: "La Rouge",
     title: "La Rouge",
     year: "2026",
@@ -60,6 +63,7 @@ const projects = [
     ],
   },
   {
+    id: 4,
     slug: "Social Media Manager",
     title: "Social Media Manager",
     year: "2026",
@@ -81,6 +85,7 @@ const projects = [
     ],
   },
   {
+    id: 5,
     slug: "Gemly",
     title: "Gemly",
     year: "2026",
@@ -102,6 +107,7 @@ const projects = [
     ],
   },
   {
+    id: 6,
     slug: "Story Hangers",
     title: "Story Hangers",
     year: "2026",

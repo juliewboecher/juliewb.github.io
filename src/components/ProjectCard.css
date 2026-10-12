@@ -42,10 +42,11 @@
   align-items: stretch;
   gap: 3rem;
   min-width: 0;
+  padding: 3rem;
 }
 
-.project-card-left,
-.project-card-right {
+.project-card-image,
+.project-card-text {
   width: 100%;
   min-width: 0;
 }

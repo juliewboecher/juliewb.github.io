@@ -7,11 +7,11 @@ function ProjectCard({ project }) {
   return (
     <article className="project-card">
       <Link to={`/projects/${id}`} className="project-card-content">
-        <div className="project-card-left">
+        <div className="project-card-image">
           <img src={image} alt={title} className="project-image" />
         </div>
 
-        <div className="project-card-right">
+        <div className="project-text">
           <h2>{title}</h2>
           <p>{year}</p>
           <p>{tags.join(", ")}</p>

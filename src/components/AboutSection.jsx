@@ -4,7 +4,7 @@ function AboutSection() {
   return (
     <section id="about" className="about-section">
       <div className="about-right">
-        <h2>Om Mig</h2>
+        <h2 className="about-title">Om Mig</h2>
         <p>
           Jeg er målrettet og stædig, når jeg sætter mig for at lære noget nyt.
           Idéer flyver til mig, og min kritiske tilgang til opgaver giver mig
@@ -31,11 +31,6 @@ function AboutSection() {
           <img src={`${import.meta.env.BASE_URL}ps.svg`} alt="Photoshop" />
           <img src={`${import.meta.env.BASE_URL}jitter.svg`} alt="Jitter" />
         </div>
-        <img
-          className="about-image"
-          src={`${import.meta.env.BASE_URL}mecaractersketchedred.png`}
-          alt="Om Mig"
-        />
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ function HeroSection() {
       <div className="hero-right">
         <img
           className="hero-image"
-          src={`${import.meta.env.BASE_URL}redportrait.png`}
+          src={`${import.meta.env.BASE_URL}heroimage.png`}
           alt="hero-poster"
         />
       </div>

@@ -15,7 +15,6 @@ function ProjectCard({ project }) {
           <h2>{title}</h2>
           <p>{year}</p>
           <p>{tags.join(", ")}</p>
-          <p>{description}</p>
         </div>
       </Link>
 

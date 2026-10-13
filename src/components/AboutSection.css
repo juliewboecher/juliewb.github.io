@@ -19,6 +19,10 @@
   height: auto;
 }
 
+.about-title {
+  font-size: clamp(2.8rem, 12vw, 4rem);
+}
+
 @media (max-width: 720px) {
 
   .about-section {

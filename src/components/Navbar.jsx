@@ -26,7 +26,20 @@ function Navbar() {
   return (
     <header className="site-header-box">
       <div className="site-header">
-        <Link className="brand" to="/" aria-label="Forside">
+        <Link
+          className="brand"
+          to="/"
+          aria-label="Forside"
+          onClick={(event) => {
+            if (location.pathname === "/") {
+              event.preventDefault();
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }
+          }}
+        >
           <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Logo" />
 
           <span className="brand-name">JULIE WENDELBOE</span>
@@ -34,7 +47,7 @@ function Navbar() {
 
         <nav className="site-nav" aria-label="Primær navigation">
           <a
-            href="https://drive.google.com/file/d/13H77MkcMRVG0EkIH_1_8sY9AV0-mWy5BG/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QUH0yja8um6QnVNjeBn5Hk3R20AF2qc9/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -46,13 +46,13 @@ function DetailPage() {
       <p>{project.description3}</p>
       <img src={project.image2} alt={project.title3} />
       <h2>{project.title4}</h2>
-      <h3>{project.title4a}</h3>
+      <h3 className="project-subtitle">{project.title4a}</h3>
       <p>{project.description4a}</p>
-      <h3>{project.title4b}</h3>
+      <h3 className="project-subtitle">{project.title4b}</h3>
       <p>{project.description4b}</p>
-      <h3>{project.title4c}</h3>
+      <h3 className="project-subtitle">{project.title4c}</h3>
       <p>{project.description4c}</p>
-      <h3>{project.title4d}</h3>
+      <h3 className="project-subtitle">{project.title4d}</h3>
       <p>{project.description4d}</p>
       <h2>{project.title5}</h2>
       <p>{project.description5}</p>

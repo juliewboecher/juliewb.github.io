@@ -19,6 +19,15 @@
   color: var(--white);
 }
 
+.se-alle-projekter {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
 @media (max-width: 720px) {
   .project-section {
     padding: 4rem 1.5rem;

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import ProjectCard from "./ProjectCard";
 import "./ProjectSection.css";
 import projects from "../data/projects";
@@ -8,10 +9,14 @@ function ProjectSection() {
       <h2>Mine Projekter</h2>
 
       <div className="project-cards">
-        {projects.map((project) => (
+        {projects.slice(0, 2).map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+
+      <Link to="/projectpage" className="se-alle-projekter">
+        Se flere projekter →
+      </Link>
     </section>
   );
 }

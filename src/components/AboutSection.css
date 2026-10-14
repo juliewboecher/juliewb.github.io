@@ -1,7 +1,7 @@
 
 
 .about-section {
-  padding: 3rem 3rem;
+  padding: 10rem 3rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .about-title {
-  font-size: clamp(2.8rem, 12vw, 4rem);
+  
   color: var(--white);
 }
 

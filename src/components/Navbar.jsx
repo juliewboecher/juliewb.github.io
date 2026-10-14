@@ -54,7 +54,7 @@ function Navbar() {
             CV
           </a>
 
-          <Link to="/#projects">PROJEKTER</Link>
+          <Link to="/projectpage">PROJEKTER</Link>
           <Link to="/#about">OM MIG</Link>
           <Link to="/#contact">KONTAKT</Link>
         </nav>

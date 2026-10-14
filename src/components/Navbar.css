@@ -18,6 +18,31 @@ html {
   width: 100%;
   background-color: #fcfaf6;
   border-bottom: solid 1px  var(--black);
+   background-color: #eee9dc;
+
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(80, 65, 45, 0.025) 0px,
+      rgba(80, 65, 45, 0.025) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    radial-gradient(
+      ellipse at 20% 30%,
+      rgba(120, 100, 70, 0.06),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 80% 70%,
+      rgba(255, 255, 255, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(100, 80, 50, 0.04),
+      transparent 45%
+    );
 }
 
 .site-header {
@@ -120,7 +145,7 @@ html {
   }
 
   .brand img {
-    width: 50px;
+    width: 70px;
   }
 
   .site-nav {

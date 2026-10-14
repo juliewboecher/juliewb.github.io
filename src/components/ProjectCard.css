@@ -49,7 +49,7 @@
 
 .project-detail-tags span {
   border: 1px solid var(--black);
-  color: var(--black);
+  color: var(--white);
   padding: 0.35rem 0.7rem;
   border-radius: 2rem;
   font-size: 0.8rem;
@@ -62,13 +62,62 @@
   list-style: none;
   padding: 0;
   margin: 1.5rem 0 0;
+  color: white;
 }
 
 .project-links a {
   display: block;
-  background-color: var(--black);
+  background-color: var(--red);
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
+
+@media (max-width: 720px) {
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .project-card-image {
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .project-text {
+    gap: 0.8rem;
+  }
+
+  .project-text h2 {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+    line-height: 1.1;
+  }
+
+  .project-detail-tags {
+    gap: 0.4rem;
+  }
+
+  .project-detail-tags span {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .project-links {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .project-links a {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
 

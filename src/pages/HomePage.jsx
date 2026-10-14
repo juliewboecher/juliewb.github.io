@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
+import QuoteSection from "../components/QuoteSection";
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);
@@ -12,6 +13,9 @@ function HomePage() {
     <div className="page">
       <section id="hero" >
         <HeroSection />
+      </section>
+      <section>
+        <QuoteSection />
       </section>
       <section id="projects" >
         <ProjectSection projects={featuredProjects} />

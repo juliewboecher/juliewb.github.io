@@ -1,0 +1,53 @@
+.quote-section {
+  padding: 4rem 3rem;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quote-section-venstre {
+  flex: 1;
+}
+
+.quote-title {
+  color: #ffffff;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.quote-author {
+  color: #ffffff;
+  margin: 1rem 0 0;
+  font-size: 1.5rem;
+}
+
+.quote-section-højre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.quote-section-højre a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .quote-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+  }
+
+  .quote-section-højre {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+}

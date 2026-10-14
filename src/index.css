@@ -7,6 +7,7 @@
   --black: #1d2430;
   --red: #9A393C;
   --gray: #D8D8D8;
+  --white: #f4f4f4;
 
   background: #f7f4ef;
   font-synthesis: none;
@@ -22,6 +23,20 @@
 body {
   margin: 0;
   min-width: 320px;
+   background-color: #f3efe5;
+
+  background-image:
+    radial-gradient(
+      rgba(80, 60, 40, 0.04) 0.7px,
+      transparent 0.7px
+    ),
+    radial-gradient(
+      rgba(255, 255, 255, 0.3) 1px,
+      transparent 1px
+    );
+
+  background-size: 4px 4px, 7px 7px;
+  background-position: 0 0, 2px 3px;
 }
 
 a {

@@ -21,16 +21,10 @@
 
 @media (max-width: 720px) {
   .project-section {
-    margin: 5rem 1.5rem;
-  }
-
-  .project-section > h2 {
-    margin-bottom: 2.5rem;
+    padding: 4rem 1.5rem;
   }
 
   .project-cards {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    max-width: 500px;
+    gap: 5rem;
   }
 }

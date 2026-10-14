@@ -1,13 +1,35 @@
 .project-section {
-  margin: 0 3rem;
+  margin: 4rem 3rem;
 }
 
-.project-card {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: transform 0.2s;
+.project-section > h2 {
+  margin-bottom: 4rem;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card .project-links a {
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .project-section {
+    margin: 5rem 1.5rem;
+  }
+
+  .project-section > h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    max-width: 500px;
+  }
 }

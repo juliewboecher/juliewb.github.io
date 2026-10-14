@@ -6,7 +6,7 @@
   
   --black: #1d2430;
   --primær: #9A393C;
-  --sekundær1: #a6e4ec;
+  --sekundær1: #BBDCDA;
   --gray: #D8D8D8;
   --white: #f4f4f4;
 
@@ -107,6 +107,27 @@ a {
 
 li {
   font-family: 'Patrick Hand';
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 

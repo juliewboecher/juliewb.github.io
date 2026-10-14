@@ -30,6 +30,13 @@
 
 .about-right p {
   color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.read-more-about-me {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 720px) {

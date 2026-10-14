@@ -2,6 +2,7 @@ import "./ProjectPage.css";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects";
 import ContactSection from "../components/ContactSection";
+import Reveal from "../components/Reveal";
 
 function ProjectPage() {
   return (
@@ -11,7 +12,9 @@ function ProjectPage() {
 
         <div className="project-cards">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <Reveal key={project.id}>
+              <ProjectCard project={project} />
+            </Reveal>
           ))}
         </div>
       </div>

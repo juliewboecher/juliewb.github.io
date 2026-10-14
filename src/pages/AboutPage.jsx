@@ -6,24 +6,34 @@ function AboutPage() {
     <section>
       <div className="about-page">
         <article>
-          <h1>Mit navn er Julie Wendelboe Bøcher</h1>
-          <h2>
-            Jeg studerer til multimediedesigner, med fokus på Interaction Design og særlig interesse for
-            frontend og UX/UI Design.
-          </h2>
-          <p>
-            Jeg er målrettet og stædig, når jeg sætter mig for at lære noget
-            nyt. Idéer flyver til mig, og min kritiske tilgang til opgaver giver
-            mig viljen til at blive ved. Jeg er som person fleksibel og ærlig,
-            og jeg trives godt med selvstændigt arbejde i et kreativt
-            fællesskab. Min tilgang er proaktiv, og jeg er meget ansvarsbevidst
-            for dem jeg arbejder for og med.
-          </p>
-          <p>
-            Jeg er en passioneret UX/UI designer med erfaring inden for
-            frontend-udvikling. Jeg elsker at skabe brugervenlige og æstetisk
-            tiltalende digitale oplevelser.
-          </p>
+          <div className="about-page-intro">
+            <h1 className="about-title-name">
+              Mit navn er Julie Wendelboe Bøcher
+            </h1>
+            <img
+              className="about-page-image"
+              src={`${import.meta.env.BASE_URL}Billedsamling.png`}
+            />
+          </div>
+          <div className="about-page-indhold">
+            <h2>
+              Jeg studerer til multimediedesigner, med fokus på Interaction
+              Design og særlig interesse for frontend og UX/UI Design.
+            </h2>
+            <p>
+              Jeg er målrettet og stædig, når jeg sætter mig for at lære noget
+              nyt. Idéer flyver til mig, og min kritiske tilgang til opgaver
+              giver mig viljen til at blive ved. Jeg er som person fleksibel og
+              ærlig, og jeg trives godt med selvstændigt arbejde i et kreativt
+              fællesskab. Min tilgang er proaktiv, og jeg er meget
+              ansvarsbevidst for dem jeg arbejder for og med.
+            </p>
+            <p>
+              Jeg er en passioneret UX/UI designer med erfaring inden for
+              frontend-udvikling. Jeg elsker at skabe brugervenlige og æstetisk
+              tiltalende digitale oplevelser.
+            </p>
+          </div>
         </article>
         <article className="about-page-me">
           <h1>Hvorfor arbejde med mig?</h1>
@@ -37,14 +47,37 @@ function AboutPage() {
         </article>
         <article className="about-experience">
           <h1>Min Erfaring</h1>
-          <h2>Social Media Manager</h2>
-          <p>Café Smagløs</p>
-          <p>
-            Skabe content til virksomhedens forskellige sociale medier, som
-            stemmer overens med virksomhedens brandidentitet heraf video og
-            videoredigering. Performance analyse af content og vurdere hvilken
-            vej
-          </p>
+          <div className="about-experience-item">
+            <p>August 2025 - Maj 2027</p>
+            <h2>Multimediedesigner 3. Semester, Erhvervsakademi Aarhus</h2>
+            <p>
+              Retning: Interaction Desig n Fokus på at skabe en gnidningsfri
+              brugeroplevelse, som er tilgængelig for interfacets brugere. UX/UI
+              Design og Programmering af webapps.
+            </p>
+          </div>
+          <div className="about-experience-item">
+            <p>September 2026 - Nu</p>
+            <h2>
+              Social Media Manager & Content Creator, Sherlock Holmes Pub Aarhus
+              C
+            </h2>
+            <p>
+              Fokus på reels. Formidle barens stemning ud til sociale medier.
+            </p>
+          </div>
+          <div className="about-experience-item">
+            <p>Januar 2026 - Nu</p>
+            <h2>
+              Social Media Manager & Content Creator, Café Smagløs Aarhus C
+            </h2>
+            <p>
+              Skabe content til virksomhedens forskellige sociale medier, som
+              stemmer overens med virksomhedens brandidentitet heraf video og
+              videoredigering. Performance analyse af content og vurdere hvilken
+              vej
+            </p>
+          </div>
         </article>
       </div>
       <ContactSection />

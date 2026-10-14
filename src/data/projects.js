@@ -171,6 +171,24 @@ const projects = [
   },
   {
     id: 5,
+    slug: "Hans Wendelboe Website",
+    title: "Hans Wendelboe Website",
+    year: "2026",
+    summary:
+      "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
+    description:
+      "Jeg arbejder lige nu på at rebrande Hans Wendelboe's hjemmeside for at skabe en mere sammenhængende og moderne online tilstedeværelse.",
+    tags: ["SQL-Database", "React", "Brandidentitet", "Re-Design"],
+    image: `${import.meta.env.BASE_URL}Hwbmockup.png`,
+    links: [
+      {
+        label: "Nuværende live site",
+        href: "https://hanswendelboe.dk/m/",
+      },
+    ],
+  },
+  {
+    id: 5,
     slug: "Gemly",
     title: "Gemly",
     year: "2026",

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import { useLocation } from "react-router";
 import { useEffect, useState } from "react";
 import "./Navbar.css";
@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <header className="site-header-box">
       <div className="site-header">
-        <Link
+        <NavLink
           className="brand"
           to="/"
           aria-label="Forside"
@@ -43,7 +43,7 @@ function Navbar() {
           <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Logo" />
 
           <span className="brand-name">JULIE WENDELBOE</span>
-        </Link>
+        </NavLink>
 
         <nav className="site-nav" aria-label="Primær navigation">
           <a
@@ -54,8 +54,8 @@ function Navbar() {
             CV
           </a>
 
-          <Link to="/projectpage">PROJEKTER</Link>
-          <Link to="/about">OM MIG</Link>
+          <NavLink to="/projectpage">PROJEKTER</NavLink>
+          <NavLink to="/about">OM MIG</NavLink>
           <a
             href="#contact"
             onClick={(event) => {

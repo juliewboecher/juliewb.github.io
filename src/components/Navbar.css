@@ -3,10 +3,6 @@
   --red: #B31619;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 [id] {
   scroll-margin-top: 100px;
 }

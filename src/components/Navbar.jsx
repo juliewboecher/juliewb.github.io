@@ -56,7 +56,18 @@ function Navbar() {
 
           <Link to="/projectpage">PROJEKTER</Link>
           <Link to="/#about">OM MIG</Link>
-          <Link to="/#contact">KONTAKT</Link>
+          <a
+            href="#contact"
+            onClick={(event) => {
+              event.preventDefault();
+
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            KONTAKT
+          </a>
         </nav>
       </div>
     </header>

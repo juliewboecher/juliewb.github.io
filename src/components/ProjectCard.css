@@ -67,7 +67,7 @@
 
 .project-links a {
   display: block;
-  background-color: var(--red);
+  background-color: var(--primær);
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;

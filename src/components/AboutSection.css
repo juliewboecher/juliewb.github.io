@@ -6,7 +6,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 3rem;
-  background-color: var(--red);
+  background-color: var(--primær);
 }
 
 .about-tools {
@@ -21,8 +21,7 @@
 }
 
 .about-title {
-  
-  color: var(--white);
+  color: var(--sekundær1);
 }
 
 .about-right h2 {

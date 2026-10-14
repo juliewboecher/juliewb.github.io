@@ -16,5 +16,5 @@
 }
 
 .download-cv-link:hover {
-  background-color: darken(var(--red), 5%);
+  background-color: darken(var(--primær), 5%);
 }

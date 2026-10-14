@@ -6,9 +6,10 @@ function AboutPage() {
     <section>
       <div className="about-page">
         <article>
+          <h1>Mit navn er Julie Wendelboe Bøcher</h1>
           <h2>
-            Multimediedesigner, Interaction Design med særlig interesse for
-            frontend og UX/UI Design
+            Jeg studerer til multimediedesigner, med fokus på Interaction Design og særlig interesse for
+            frontend og UX/UI Design.
           </h2>
           <p>
             Jeg er målrettet og stædig, når jeg sætter mig for at lære noget

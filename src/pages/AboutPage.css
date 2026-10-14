@@ -4,6 +4,7 @@
   margin: 2rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
+  color: var(--primær);
 }
 .about-page p {
   font-size: 1.2rem;
@@ -20,12 +21,12 @@
 }
 
 .about-experience {
-  background-color: var(--red);
+  background-color: var(--primær);
   padding-bottom: 3rem;
 }
 
 .about-experience h1 {
-  color: var(--white);
+  color: var(--sekundær1);
 }
 
 .about-experience h2 {

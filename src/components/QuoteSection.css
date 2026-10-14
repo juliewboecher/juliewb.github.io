@@ -1,6 +1,6 @@
 .quote-section {
   padding: 10rem 3rem;
-  background-color: var(--red);
+  background-color: var(--primær);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .quote-highlight {
-  color: var(--black);
+  color: var(--sekundær1);
 }
 
 .quote-author {

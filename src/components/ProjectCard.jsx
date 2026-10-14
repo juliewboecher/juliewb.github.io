@@ -7,17 +7,20 @@ function ProjectCard({ project }) {
   return (
     <article className="project-card">
       <Link to={`/projects/${id}`} className="project-card-content">
+        <p>{year}</p>
         <div className="project-card-image">
           <img src={image} alt={title} className="project-image" />
         </div>
-
-        <div className="project-text">
-          <h2>{title}</h2>
-          <p>{year}</p>
-          <p>{tags.join(", ")}</p>
-        </div>
       </Link>
-
+      
+      <div className="project-text">
+        <h2>{title}</h2>
+        <div className="project-detail-tags">
+          {tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+      </div>
       <ul className="project-links">
         {links.map((link) => (
           <li key={link.label}>

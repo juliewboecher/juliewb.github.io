@@ -11,16 +11,16 @@ function ProjectCard({ project }) {
         <div className="project-card-image">
           <img src={image} alt={title} className="project-image" />
         </div>
-      </Link>
-      
-      <div className="project-text">
-        <h2>{title}</h2>
-        <div className="project-detail-tags">
-          {tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
+
+        <div className="project-text">
+          <h2>{title}</h2>
+          <div className="project-detail-tags">
+            {tags.map((tag) => (
+              <span key={tag}>{tag}</span>
+            ))}
+          </div>
         </div>
-      </div>
+      </Link>
       <ul className="project-links">
         {links.map((link) => (
           <li key={link.label}>

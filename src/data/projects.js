@@ -41,14 +41,14 @@ const projects = [
     image4c: `${import.meta.env.BASE_URL}Vuuhformular.png`,
     title4d: "Test-ordre flow",
     description4d:
-      "Vuuhs løsning: Vuuhs nuværende løsning giver brugeren ingen indikation til, at man skal lave en test-ordre*, efter man har sat Shopify op. Hvis dette step ikke bliver opfyldt, så kan brugeren ikke være sikker på, at Vuuh er opsat korrekt og brugeren får aldrig sin success oplevelse, med at have gennemført opsætningen. Vores løsning: Efter successfuldt download af test-ordre skal få brugeren en loading side for at forsikre brugeren om, at dette blot er en test-ordre, og at denne derfor ikke vil komme frem i deres webshop. Efter loading indikator, får man en pop-up Order is successfully downloaded!",
+      "Vuuhs nuværende “test-ordre flow” giver ingen indikation til, at man skal lave en test-ordre, efter man har connected Vuuh med Shopify. Hvis dette step ikke bliver opfyldt, kan hverken Vuuh eller brugeren være sikker på, at det rent teknisk er opsat korrekt. I vores optimerede “test-ordre flow” får brugeren en loading side efter successfuldt download af test-ordre. Sådan sikrer vi brugeren om, at dette blot er en test-ordre, og at den derfor ikke vil blive vist i deres webshop. Efter en loading-indikator, vises et overlay med “Order is successfully downloaded!“.",
     image4d: `${import.meta.env.BASE_URL}Vuuhtestordre.png`,
     title5: "Tværgående mønstre",
     description5:
-      "Den nuværende onboarding består af alt for mange steps. Brugeren bliver ikke guided igennem, og et er ikke intuitivt, hvad næste step er. Brugeren støder gentagende gange på steps, som ser ud til at være det sidste og rammer standstill. Et gennemgående problem er at forhindre fejl. Der mangler guidence og færre steps. Det skal gøres så simpelt som muligt. Disse gennemgående problemer ligger sig op ad 2 heuristikker: 5 Error Prevention og 7 Flexibility and Efficiency of use. Det er vigtigt at få rettet op på for et gnidningsfrit flow",
+      "Den nuværende onboarding består af alt for mange steps. Brugeren bliver ikke guided nok og det er ikke intuitivt, hvad næste step er. Især ikke for ikke-erfarne brugere. Brugeren støder gentagende gange på steps, som ser ud til at være det sidste og rammer standstill. Et gennemgående problem er at forhindre fejl. Der mangler guidence og færre steps. Det skal gøres så simpelt som muligt. Vuuhs onboarding tager heller ikke nok hensyn til forskellige typer brugere og deres erfaring. Vi overvejede undervejs at tilføje en step-tracker, som kunne give brugeren et overblik over processen. Vi blev dog enige med Vuuh om, at det ikke var nødvendigt, og at vores guided steps står stærkt i sig selv.",
     title6: "Fokus fremadrettet",
     description6:
-      "Hvordan sørger man for at onboarding er accessible for både persona 1 og 2? Fremadrettet ville vi lægge fokus på hvordan erfarne brugere som persona 2 kan skippe mulige steps, for Flexibility and Efficiency of use, og dermed ramme en bredere målgruppe. Implementer guided-steps til resten af flow. Fremadrettet ser vi at vores forslag til guided-steps-onboarding implementeres til resten af flowet, eksempelvis ved de efterfølgende steps “connect to brands”. Forslag til gavn for begge personaer. En feature som kan gavne både persona 1 og 2 er en step-tracker som giver brugeren Visibility of System Status. En step tracker i toppen af interfacet, som viser hvor langt brugeren er i flowet, og hvilke steps der kommer næst.",
+      "Hvordan sørger man for, at onboarding er tilgængelig for både erfarne og ikke-erfarne brugere? Fremadrettet ville vi lægge fokus på hvordan erfarne brugere kan skippe mulige steps, for fleksibilitet og effektivitet, og dermed ramme en bredere målgruppe. Fremadrettet ser vi at vores forslag til guided-steps-onboarding implementeres til resten af flowet, eksempelvis ved de efterfølgende steps med “connect to brands”.",
   },
 
   {
@@ -58,37 +58,53 @@ const projects = [
     year: "2026",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
-      "Optimeringsprojekt med fokus på tilmeldningsflow og fetch af Supabase data. Fokus på fejlhåndtering i form af skeleton, 404 page og error page. Fokus på accessibility, i form af semantisk html.",
+      "Mellemrum er en fiktiv webapp, designet til at samle koncerter, talks, workshops og fællesskaber, så du lettere kan opdage noget, du ikke allerede kendte.",
     tags: ["React", "Supabase", "Fejlhåndtering"],
     image: `${import.meta.env.BASE_URL}Mellemrummockup.png`,
     links: [
       {
-        label: "Live site",
+        label: "Live Site",
         href: "https://juliewboecher.github.io/mellemrum/",
       },
       {
-        label: "GitHub repo",
+        label: "GitHub Repository",
         href: "https://github.com/juliewboecher/mellemrum.git",
+      },
+      {
+        label: "Teknisk Audit",
+        href: "https://drive.google.com/file/d/1miw44MEK-2fqgR7NK-7q3QrIb94hoSzQ/view?usp=sharing",
       },
     ],
     title2: "Udfordring",
+    description2:
+      "Det største problem med Mellemrum var tilmeldingsflowet. Tilmeldinger blev ikke gemt i en database. Brugeren modtog heller ingen bekræftelse ved tilmelding, og der var ingen måde at se sin tilmelding på efterfølgende. Derudover manglede der forebyggende fejlhåndtering, hvis der opstod fejl under hentning af data eller under tilmelding. Disse fejl ville gøre brugeren utryg og forvirret ved brug af appen, og derfor ikke gøre processen nemmere for brugeren, som egentlig er meningen med appen.",
     title3: "Undersøgelse og prioritering",
+    description3:
+      "Jeg har valgt at fremhæve 4 optimeringer, men alle optimeringer kan ses i “Teknisk Audit“ eller i “GitHub Repository“. Optimeringerne er fundet ud fra en teknisk gennemgang af koden samt den deployet løsning, hvor jeg slog ned på de største problemer i flowet. Jeg har prioriteret optimeringerne ud fra, hvilke der vil have størst effekt på brugeroplevelsen.",
     image2: `${import.meta.env.BASE_URL}Mellemrumprio.png`,
     title4: "Løsning og dokumentation",
     title4a: "Beskræftelse ved tilmelding",
     description4a:
-      "Område: Robusthed - Fejlhåndtering og UI-states Fund og evidens. Tilmelding - Ingen bekræftigelse når man har trykket tilmeld. Forslag til løsning: Tilføj en succesmelding når man har trykket på tilmeld. Verifikation:Gennemfør tilmelding og se en “succes” besked vises ved tryk på “tilmeld”",
+      "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Ved tilmelding fik brugeren ingen bekræftigelse efter tryk på tilmeld. Min løsning til dette var at tilføje en succesmelding når man har trykket på tilmeld. Det kan ses inplementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl om de fik trykket på tilmeld.",
+    image4a: `${import.meta.env.BASE_URL}Mellemrumtilmelding.png`,
     title4b: "Fejlmelding ved mangler",
     description4b:
-      "Område: Robusthed - Fejlhåndtering og UI-states. Fund og evidens: Tilmelding - Fejlmelding, hvis man mangler at udfylde enten mail eller navn, når man trykker på tilmeld. Forslag til løsning: Tilføj henholdsvis en melding ved indput til navn og indput til mail, som vises hvis der mangler at blive udfyldt. Verifikation:Gennemfør tilmelding og se en “succes” besked vises ved tryk på “tilmeld”",
+      "Her er problemet igen indefor området robusthed og sikker fejlhåndtering af UI-states. Hvis brugeren manglede at udfylde enten mail eller navn, når de trykkede på tilmeld, var der ingen fejlmelding af dette. Min løsning var at tilføje henholdsvis en fejlmelding ved indput til navn og indput til mail, som vises hvis der mangler at blive udfyldt. Nu efterlades brugeren ikke med tvivl om, hvorvidt de har udfyldt de nødvendige felter.",
+    image4b: `${import.meta.env.BASE_URL}Mellemrummangler.png`,
     title4c: "Skeleton loading",
     description4c:
-      "Område: Performance - Mål og verificér i praksis. Fund og evidens: Loading, fetching af kode. Især billeder og event cards. Forslag til løsning. Skeleton, viser et skelet for hvad der loades Verifikation:",
-    title4d: "Utilities",
+      "Indenfor performance af koden fandt jeg en usikker håndtering af loading og fetching af kode. Ved loading af billeder og event cards, var der ingen indikation af at noget var ved at blive hentet. Derfor implementerede jeg skeleton loading, som viser et skelet for hvad der loades. Derfor er brugeren ikke længere i tvivl om, at noget bliver hentet, hvis netværket er svagt, eller der sker en anden fejl i hentning af data.",
+    image4c: `${import.meta.env.BASE_URL}Mellemrumskeletonkode.png`,
+    title4d: "Automatisering af opdatering af data",
     description4d:
-      "Område: Datamodel og relationer - Supabase. Fund og evidens: Genbrug af funktioner - Nogle funktioner og states genbruges på flere pages. Forslag til løsning: Opret services og utilities mappe med js fil til funktioner og states som genbruges, som så kan importeres hvor de skal bruges.Verifikation:",
+      "Her fandt jeg indenfor relationen til Supabase et potentiale for at automatisere opdateringen af data. Hvis en venue opdaterer sit navn eller url til website, så ændres det ikke automatisk alle steder hvor den venue optræder. For at løse dette, implementerede jeg både i HomePage.jsx og EventPage.jsx, en fetching der lytter efter ændringer i venue data og automatisk opdaterer alle steder, hvor denne venue data bliver brugt.",
+    image4d: `${import.meta.env.BASE_URL}Mellemrumauto.png`,
     title5: "Tværgående mønstre",
+    description5:
+      "Overordnet fandt jeg ud af, at Mellemrum manglede overblik til brugeren og bekræftelse og tryghed ved tilmelding. Derudover manglede der en sikker håndtering af fejl i dataflowet. Disse mangler gjorde det usikkert for brugeren at bruge appen.",
     title6: "Fokus fremadrettet",
+    description6:
+      "Fremadrettet ville jeg implementere resten af mine findings fra “Teknisk Audit“. Derudover ville jeg implementere en log-ind-funktion, både for brugeren og for venues. På den måde kan jeg skjule tilmeldinger for brugerne, så de kun kan se antal tilmeldinger, frem for at vise brugeres data på en offentlig side.",
   },
   {
     id: 3,

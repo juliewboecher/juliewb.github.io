@@ -5,8 +5,11 @@ function QuoteSection() {
     <section className="quote-section">
       <div className="quote-section-venstre">
         <h1 className="quote-title">
-          "Siden sin første dag har hun været god til at sige "ja tak" til nye
-          opgaver og udfordringer."
+          "Jeg vil varmt anbefale Julie til enhver, der søger en{" "}
+          <span className="quote-highlight">
+            engageret, kreativ og pligtopfyldende
+          </span>{" "}
+          medarbejder med lyst til at lære og udvikle sig."
         </h1>
         <h2 className="quote-author"> - Vincentius, Driftschef Café Smagløs</h2>
       </div>

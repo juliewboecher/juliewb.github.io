@@ -55,7 +55,7 @@ function Navbar() {
           </a>
 
           <Link to="/projectpage">PROJEKTER</Link>
-          <Link to="/#about">OM MIG</Link>
+          <Link to="/about">OM MIG</Link>
           <a
             href="#contact"
             onClick={(event) => {

@@ -1,0 +1,40 @@
+
+
+.about-page h1 {
+  margin: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+.about-page p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 2rem;
+}
+
+.about-page h2 {
+    margin: 2rem;
+}
+
+.about-page-me {
+  margin-bottom: 2rem;
+}
+
+.about-experience {
+  background-color: var(--red);
+  padding-bottom: 3rem;
+}
+
+.about-experience h1 {
+  color: var(--white);
+}
+
+.about-experience h2 {
+  color: var(--white);
+  margin: 2rem;
+}
+
+.about-experience p {
+  color: var(--white);
+}
+
+

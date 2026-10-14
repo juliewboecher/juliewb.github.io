@@ -3,7 +3,7 @@ import "./KompetencerSection.css";
 function KompetencerSection() {
   return (
     <section className="kompetencer-section">
-      <h1>Mine Kompetencer</h1>
+      <h2>Mine Kompetencer</h2>
       <p>
         USER RESEARCH, UX/UI DESIGN, FRONTEND, PROTOTYPING, CONTENT CREATION,
         ACCESSIBILITY, BRANDIDENTITET, ONBOARDING, DESIGN SYSTEM

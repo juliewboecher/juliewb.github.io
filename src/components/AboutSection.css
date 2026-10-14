@@ -6,6 +6,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 3rem;
+  background-color: var(--red);
 }
 
 .about-tools {

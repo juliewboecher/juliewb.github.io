@@ -18,36 +18,47 @@ function DetailPage() {
     return <h2>Projekt ikke fundet</h2>;
   }
 
-  const { title, year, description, tags } = project;
+  const { title, year, tags, tools } = project;
 
   return (
     <div className="project-detail">
       {/* Intro / projektets titel */}
 
-      <div className="project-detail-text">
-        <div className="project-detail-eyebrow">
-          <div className="project-detail-tags">
-            {tags.map((tag) => (
-              <span key={tag}>{tag}</span>
+      <div className="project-detail-intro">
+        {/* TITEL + LINKS */}
+        <div className="project-detail-intro-top">
+          <h1>{title}</h1>
+
+          <div className="project-links">
+            {project.links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.label}
+              </a>
             ))}
           </div>
-
-          <p>{year}</p>
         </div>
 
-        <h1>{title}</h1>
+        {/* INFO-SKEMA */}
+        <div className="project-detail-info">
+          <div className="project-info-item">
+            <p className="project-info-label">Projektperiode</p>
+            <p className="project-info-value">{year}</p>
+          </div>
 
-        <div className="project-links">
-          {project.links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {link.label}
-            </a>
-          ))}
+          <div className="project-info-item">
+            <p className="project-info-label">Redskaber</p>
+            <p className="project-info-value">{tools.join(", ")}</p>
+          </div>
+
+          <div className="project-info-item">
+            <p className="project-info-label">Områder</p>
+            <p className="project-info-value">{tags.join(", ")}</p>
+          </div>
         </div>
       </div>
 

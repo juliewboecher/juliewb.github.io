@@ -4,7 +4,8 @@ const projects = [
     slug: "LA RŌUGE, Koncept- og subbrandudvikling",
     title: "LA RŌUGE, Koncept- og subbrandudvikling",
     year: "2026",
-    tags: ["Designsystem", "Brandidentitet"],
+    tags: ["Designsystem", "Brandidentitet", "Konceptudvikling"],
+    tools: ["Figma"],
     image: `${import.meta.env.BASE_URL}Larougemockup.png`,
     links: [
       {
@@ -59,6 +60,7 @@ const projects = [
     title: "Vuuh, Design Better Onboarding",
     year: "2026",
     tags: ["Figma Prototype", "User flow", "Onboarding"],
+    tools: ["Figma"],
     image: `${import.meta.env.BASE_URL}Vuuhmockup.png`,
     links: [
       {
@@ -107,7 +109,8 @@ const projects = [
     slug: "Mellemrum, fejlhåndtering af data",
     title: "Mellemrum, Fra prototype til produktionsklar React-løsning",
     year: "2026",
-    tags: ["React", "Supabase", "Fejlhåndtering"],
+    tags: ["CRUD", "Accessibility", "Fejlhåndtering"],
+    tools: ["Supabase", "React"],
     image: `${import.meta.env.BASE_URL}Mellemrummockup.png`,
     links: [
       {
@@ -164,6 +167,7 @@ const projects = [
     description:
       "I mit arbejde som SoMe Manager, planlægger jeg, i dialog med Café Smagløs driftschef, hvad og hvornår indhold deles. Jeg er komfortabel i at have en stor del af ansvaret i planlægningen og eksekveringen. Tilgang: Hvordan kan jeg skabe en rød tråd gennem caféens optræden på sociale medier? Og hvordan kan jeg skabe indhold på virksomhedens sociale medier, som skaber værdi for seerne og giver dem lyst til at besøge caféen?",
     tags: ["Content Creation", "Videoredigering", "Performance-analyse"],
+    tools: ["Figma", "Miro"],
     image: `${import.meta.env.BASE_URL}smaglos.svg`,
     links: [
       {
@@ -186,6 +190,7 @@ const projects = [
     description:
       "Jeg arbejder lige nu på at rebrande Hanswendelboe.dk's for at skabe en mere sammenhængende og moderne online tilstedeværelse.",
     tags: ["SQL-Database", "React", "Brandidentitet", "Re-Design"],
+    tools: ["Figma", "Miro"],
     image: `${import.meta.env.BASE_URL}Hwbmockup.png`,
     links: [
       {
@@ -204,6 +209,7 @@ const projects = [
     description:
       "Beskriv problemet, Gemly er en webapp som samler søgning og filtrering, organisering af fundne steder, rutevejledning og deling af de skjulte perler, de selv finder.“Hvordan kan vi hjælpe vores målgruppe i deres research og planlægning efter at finde mindre kendte steder at besøge, når de rejser? Og hvordan skaber vi en brandidentitet som giver appen værdi for brugerne?”, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
     tags: ["Konceptudvikling", "React", "Brandidentitet", "Onboarding"],
+    tools: ["Figma", "Miro"],
     image: `${import.meta.env.BASE_URL}gemly.svg`,
     links: [
       {
@@ -226,6 +232,7 @@ const projects = [
     description:
       "Story Hangers er et projekt, der fokuserer på at forbedre kundeoplevelsen i detailhandlen ved hjælp af innovative designløsninger.",
     tags: ["User Research", "Kundeoplevelse", "React"],
+    tools: ["Figma", "Miro"],
     image: `${import.meta.env.BASE_URL}story.svg`,
     links: [
       {

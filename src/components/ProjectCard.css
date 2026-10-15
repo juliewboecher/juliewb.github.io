@@ -47,13 +47,7 @@
   margin: 0;
 }
 
-.project-detail-tags span {
-  border: 1px solid var(--black);
-  color: var(--white);
-  padding: 0.35rem 0.7rem;
-  border-radius: 2rem;
-  font-size: 0.8rem;
-}
+
 
 .project-links {
   display: flex;

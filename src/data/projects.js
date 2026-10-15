@@ -1,18 +1,15 @@
 const projects = [
   {
     id: 1,
-    slug: "La Rouge, Secondhand subbrand",
-    title: "La Rouge, Secondhand subbrand",
+    slug: "LA RŌUGE, Koncept- og subbrandudvikling",
+    title: "LA RŌUGE, Koncept- og subbrandudvikling",
     year: "2026",
-    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
-    description:
-      "Udvikling af koncept, subbrand og brugerflade for La Rouges nye og optimerede Re-commerce indsats.",
     tags: ["Designsystem", "Brandidentitet"],
     image: `${import.meta.env.BASE_URL}Larougemockup.png`,
     links: [
       {
         label: "Figma Prototype",
-        href: "https://juliewboecher.github.io/mellemrum/",
+        href: "https://www.figma.com/proto/6Zo726U8LHnWHRK2FNyTz4/La-Rouge-Design?node-id=578-1480&p=f&viewport=119%2C148%2C0.33&t=GIu8ANJhjCD5M3W9-1&scaling=scale-down&content-scaling=fixed&page-id=278%3A1994",
       },
       {
         label: "Branddeck",
@@ -22,32 +19,44 @@ const projects = [
         label: "Koncept & Løsning",
         href: "https://github.com/juliewboecher/mellemrum.git",
       },
+      {
+        label: "Research",
+        href: "https://drive.google.com/file/d/1Zy-B-iCLXyCcXEQ9e4ffg3GL_UAlKz-B/view?usp=sharing",
+      },
     ],
-    title2: "Udfordring",
-    title3: "Undersøgelse og prioritering",
+    title2: "Om projektet",
+    description2:
+      "LA RŌUGE har etableret et univers hvor kunder kan sælge det tøj fra LA RŌUGE, som de ikke længere bruger – et koncept der også er kendt som Secondhand eller Re-commerce. I dag lever re-commerce-initiativet i skyggen af hovedbrandet, uden sin egen visuelle identitet, tone of voice eller dedikerede kommunikationsindsats – og det betyder, at potentialet i konceptet langt fra bliver udnyttet.",
+    title3: "Udfordring",
     description3:
-      "Identifikation af problem og mulighed: Med subbrand kan la rouge gå all in på “rødstrømpe og power”-identiteten som de gerne vil, fordi der er plads til mere spræl. De kan have andet tøj end deres eget brand, som kan hjælpe med at få et mere “rødstrømpe”-agtigt udtryk. Kortlæggelse af hovedbrandets associationer: At det er en clean og chic hjemmeside som udståler highend og god kvalitet. At de står for at være sin egen person. House of Brands eller Branded House?Branded House --> Vores brand læner sig meget op ad La Rouge og trækker på deres værdier og er bygget på samme DNA. Definér subbrandets rolle i organisationen. Et sted til en lidt yngre målgruppe, som er en smule mere vovet, og en anden prisklasse og andet sæt værdier bag. Forbindelsen skal være ret tæt, det er synligt at det er et subbrand. Men der er tydelig forskel på både design, koncept og udtryk. Fx. taler til en anden målgruppe, mere konkret har de også andre mærker på siden. Sæt design på subbrandet og til broen til hovedbrandet “by larouge” farver (den mørkerøde) Dele af Tone of voice Logoets placering (i midten) Stadig noget af larouge eget tøj (secondhand). Hvordan bryder vi med larouge? Andre mærker Lidt mere legende, rebelske og udtryksfulde Visuelt: flere farver Mere vægt på den enkelte person (unikke items)",
+      "Hvordan kan vi skabe en stærkere visuel identitet for LA RŌUGE’s secondhand-koncept? Hvordan skaber vi en tydelig råd tråd mellem de to brands, og hvordan differenserer de sig fra hinanden?",
     image2: `${import.meta.env.BASE_URL}Larougeprio.png`,
-    title4: "Løsning og dokumentation",
-    title4a: "Brandidentitet",
-    image4a: `${import.meta.env.BASE_URL}Larougebrand.png`,
-    title4b: "Målgruppe vs. produkter",
-    image4b: `${import.meta.env.BASE_URL}Larougepersona.png`,
-    title4c: "Pris for indlevering",
+    title4: "Optimering",
+    description4:
+      "På baggrund af vores research har vi kastet LA RŌUGE’s secondhand-koncept op i luften, og re-tænkt det. Vi er endt med subbrandet À l'avant BY LA RŌUGE. Et subbrand som appalerer til en yngre og mere miljøbevidst målgruppe. De vil finde unikke items, uden at gå på kompromis med kvalitet.",
+    title4a: "Målgruppe",
+    description4a:
+      "Vi har taget ugangspunkt i målgruppen 18-35-årige kvinder, som allerede shopper secondhand. Vores research fortæller at målgruppens største motivation er at finde unikke items i god kvalitet. For at imødekomme dette behov, har vi foreslået at À l'avant også sælger vintage items fra andre brands, som brugerne sender ind via sælg-flowet i appen.",
+    image4a: `${import.meta.env.BASE_URL}Larougepersona.png`,
+    title4b: "Brandidentitet",
+    description4b:
+      "À l'avant er feminint, moderne og sofistikeret, men aldrig højtideligt. De taler til kvinder som ligeværdige og deres sprog er enkelt og velovervejet med plads til at være legende. Deres farvepalette lægger sig tydeligt op ad LA RŌUGE's, men adskiller sig med den stærke røde og bløde lyserøde farve. Logoet er legende og med appel til den stærke moderne kvinde.",
+    image4b: `${import.meta.env.BASE_URL}Larougebrand.png`,
+    title4c: "Sælg-flow",
+    description4c: "Sælg-flowet er intuitivt og nemt at bruge. Det er designet til at motivere og realisere hvor nemt og smart det er at sælge sit tøj til À l'avant BY LA RŌUGE.",
     image4c: `${import.meta.env.BASE_URL}Larougesælg.png`,
     title4d: "Filtrering",
+    description4d: "Muligheden for at filtrere er helt afgørende for målgruppen. Det er den feature der gør at de vælger online secondhand-shopping, frem for fysisk. Derfor har vi inplementeret det i vores design.",
     image4d: `${import.meta.env.BASE_URL}Larougefilter.png`,
-    title5: "Tærgående mønstre",
+    title5: "Den røde tråd",
+    description5: "Det gennemgående tema i vores design er at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart at de to brands henvender sig til forskellige målgrupper.",
     title6: "Fokus fremadrettet",
   },
   {
     id: 2,
     slug: "Vuuh, Optimering af onboarding",
-    title: "Vuuh, Optimering af onboarding",
+    title: "Vuuh, Design Better Onboarding",
     year: "2026",
-    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
-    description:
-      "Vuuh oplever at deres brugere oplever problemer under onboarding, og derfor mangler de en klar vejledning for at komme i mål. Vi har udviklet en optimeret onboarding proces, i form af en interaktiv prototype, der guider brugerne gennem essentielle dele af onboarding.",
     tags: ["Figma Prototype", "User flow", "Onboarding"],
     image: `${import.meta.env.BASE_URL}Vuuhmockup.png`,
     links: [
@@ -60,14 +69,14 @@ const projects = [
         href: "https://drive.google.com/file/d/1r6ZC2bulI5YFLgJ1n-_2rd0doWEptNk5/view?usp=sharing",
       },
     ],
-    title2: "Udfordring",
+    title2: "Om projektet",
     description2:
-      "Den overordnede udfordring er, at onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”, “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer er, at brugeren ikke selvstændigt kan komme videre og rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen kan være, at brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.",
-    title3: "Undersøgelse og prioritering",
+      "Vuuh oplever at deres brugere oplever problemer under onboarding, og derfor mangler de en klar vejledning for at komme i mål. Vi har udviklet en optimeret onboarding proces, i form af en interaktiv prototype, der guider brugerne gennem essentielle dele af onboarding.",
+    title3: "Udfordring",
     description3:
-      "Målet er, at appen kan opstilles selvstændigt. Vi vil minimere steps og tydeliggøre steps. Eksempelvis ved at fjerne unødvendige klik fra guiden, så brugeren undgår unødvendige indtryk og oplever en enkel og overskuelig proces.",
-    image2: `${import.meta.env.BASE_URL}Vuuhprio.png`,
-    title4: "Løsning og dokumentation",
+      "Den overordnede udfordring er, at onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”, “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer er, at brugeren ikke selvstændigt kan komme videre og rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen kan være, at brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.",
+    title4: "Optimering",
+    description4: "For at opnå en ",
     title4a: "succes-side",
     description4a:
       "Problemet med Vuuh's nuværende succes-side er, at det er uklart at brugeren skal åbne Vuuh app efter at succes-siden vises, da det ikke oplyses på siden. Brugeren kommer derfor muligvis ikke videre. Brugeren har brug for ekstra forklaring til af færdiggøre opgaven. Siden ligner desuden ikke andre, og opfylder altså ikke standarden for at “connecte to apps”. På vores optimerede succes-side har vi taget højde for accessibility ift. brugerens indsat, ved at tydeliggøre hvad næste step er. Vi har tilføjet en “click here”-knap som fører brugeren direkte til Vuuh. Vi har fremhævet brugerens shopname, samt at det skal bruges til at connecte til Vuuh.",
@@ -93,13 +102,10 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     slug: "Mellemrum, fejlhåndtering af data",
-    title: "Mellemrum, fejlhåndtering af data",
+    title: "Mellemrum, Fra prototype til produktionsklar React-løsning",
     year: "2026",
-    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
-    description:
-      "Mellemrum er en fiktiv webapp, designet til at samle koncerter, talks, workshops og fællesskaber, så du lettere kan opdage noget, du ikke allerede kendte.",
     tags: ["React", "Supabase", "Fejlhåndtering"],
     image: `${import.meta.env.BASE_URL}Mellemrummockup.png`,
     links: [
@@ -116,14 +122,13 @@ const projects = [
         href: "https://drive.google.com/file/d/1miw44MEK-2fqgR7NK-7q3QrIb94hoSzQ/view?usp=sharing",
       },
     ],
-    title2: "Udfordring",
+    title2: "Om projektet",
     description2:
-      "Det største problem med Mellemrum var tilmeldingsflowet. Tilmeldinger blev ikke gemt i en database. Brugeren modtog heller ingen bekræftelse ved tilmelding, og der var ingen måde at se sin tilmelding på efterfølgende. Derudover manglede der forebyggende fejlhåndtering, hvis der opstod fejl under hentning af data eller under tilmelding. Disse fejl ville gøre brugeren utryg og forvirret ved brug af appen, og derfor ikke gøre processen nemmere for brugeren, som egentlig er meningen med appen.",
-    title3: "Undersøgelse og prioritering",
+      "Mellemrum er en fiktiv webapp, designet til at samle koncerter, talks, workshops og fællesskaber, så du lettere kan opdage noget, du ikke allerede kendte.",
+    title3: "Udfordring",
     description3:
-      "Jeg har valgt at fremhæve 4 optimeringer, men alle optimeringer kan ses i “Teknisk Audit“ eller i “GitHub Repository“. Optimeringerne er fundet ud fra en teknisk gennemgang af koden samt den deployet løsning, hvor jeg slog ned på de største problemer i flowet. Jeg har prioriteret optimeringerne ud fra, hvilke der vil have størst effekt på brugeroplevelsen.",
-    image2: `${import.meta.env.BASE_URL}Mellemrumprio.png`,
-    title4: "Løsning og dokumentation",
+      "Det største problem med Mellemrum var tilmeldingsflowet. Tilmeldinger blev ikke gemt i en database. Brugeren modtog heller ingen bekræftelse ved tilmelding, og der var ingen måde at se sin tilmelding på efterfølgende. Derudover manglede der forebyggende fejlhåndtering, hvis der opstod fejl under hentning af data eller under tilmelding. Disse fejl ville gøre brugeren utryg og forvirret ved brug af appen, og derfor ikke gøre processen nemmere for brugeren, som egentlig er meningen med appen.",
+    title4: "Optimering",
     title4a: "Beskræftelse ved tilmelding",
     description4a:
       "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Ved tilmelding fik brugeren ingen bekræftigelse efter tryk på tilmeld. Min løsning til dette var at tilføje en succesmelding når man har trykket på tilmeld. Det kan ses inplementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl om de fik trykket på tilmeld.",
@@ -140,7 +145,7 @@ const projects = [
     description4d:
       "Her fandt jeg indenfor relationen til Supabase et potentiale for at automatisere opdateringen af data. Hvis en venue opdaterer sit navn eller url til website, så ændres det ikke automatisk alle steder hvor den venue optræder. For at løse dette, implementerede jeg både i HomePage.jsx og EventPage.jsx, en fetching der lytter efter ændringer i venue data og automatisk opdaterer alle steder, hvor denne venue data bliver brugt.",
     image4d: `${import.meta.env.BASE_URL}Mellemrumauto.png`,
-    title5: "Tværgående mønstre",
+    title5: "Gennemgående problemer",
     description5:
       "Overordnet fandt jeg ud af, at Mellemrum manglede overblik til brugeren og bekræftelse og tryghed ved tilmelding. Derudover manglede der en sikker håndtering af fejl i dataflowet. Disse mangler gjorde det usikkert for brugeren at bruge appen.",
     title6: "Fokus fremadrettet",

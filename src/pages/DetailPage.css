@@ -1,4 +1,3 @@
-
 /* ========================================
    GENEREL PROJEKT DETAIL
 ======================================== */
@@ -16,49 +15,28 @@
 
 .project-detail-intro {
   width: 100%;
-  margin: 7rem auto;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
   padding: 0 9rem;
   box-sizing: border-box;
 }
 
 
 /* ========================================
-   TITEL + LINKS
+   TITEL + INFO
 ======================================== */
 
 .project-detail-intro-top {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .project-detail-intro-top h1 {
   margin: 0;
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(4rem, 8vw, 5rem);
   line-height: 0.85;
   max-width: 100%;
-}
-
-
-/* ========================================
-   PROJECT LINKS
-======================================== */
-
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.project-links a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.project-links a:hover {
-  color: var(--red);
-  text-decoration: none;
 }
 
 
@@ -68,10 +46,9 @@
 
 .project-detail-info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-
-  margin-top: 6rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
 }
 
 .project-info-item {
@@ -82,9 +59,10 @@
 }
 
 .project-info-label {
-  color: var(--black);
+  color: var(--primær);
   font-family: "Passion One";
   font-size: 1.2rem;
+  line-height: 1;
   margin: 0;
 }
 
@@ -93,6 +71,53 @@
   font-size: 1.2rem;
   line-height: 1.4;
   margin: 0;
+  overflow-wrap: break-word;
+}
+
+
+/* Sidste kolonne helt til højre */
+
+.project-info-item:last-child {
+  justify-self: end;
+  text-align: right;
+}
+
+
+/* ========================================
+   LINKS PÅ DETAILPAGE
+======================================== */
+
+.detail-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin: 0 9rem 7rem;
+  padding: 0;
+
+  list-style: none;
+}
+
+.detail-project-links a {
+  display: inline-block;
+  box-sizing: border-box;
+
+  background-color: var(--primær);
+  color: var(--white);
+
+  padding: 0.6rem 1.2rem;
+
+  border: 1px solid transparent;
+
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.detail-project-links a:hover {
+  background-color: transparent;
+  color: var(--black);
+  border-color: var(--black);
+  text-decoration: none;
 }
 
 
@@ -105,7 +130,7 @@
   flex-direction: column;
   gap: 1rem;
 
-  margin: 7rem 9rem;
+  margin: 4rem 9rem;
 }
 
 .project-detail-text h2 {
@@ -129,14 +154,14 @@
   align-items: center;
   gap: 1rem;
 
-  color: var(--black);
-  font-family: "Patrick Hand";
+  color: var(--primær);
+  font-family: "Passion One";
   font-size: 1rem;
 }
 
 .eyebrow-number {
-  font-family: "Patrick Hand";
-  font-weight: bold;
+  font-family: "Passion One";
+  color: var(--primær);
 }
 
 .eyebrow-line {
@@ -169,7 +194,7 @@
 .project-detail-colored-content h2,
 .project-detail-colored-content p,
 .project-detail-colored-content span {
-  color: white !important;
+  color: var(--white);
 }
 
 
@@ -187,7 +212,7 @@
 
   padding: 6rem 9rem;
 
-  background-color: #9a393c !important;
+  background-color: var(--primær);
 }
 
 .project-detail-column {
@@ -199,15 +224,15 @@
 .project-detail-column h2,
 .project-detail-column p,
 .project-detail-column span {
-  color: white !important;
+  color: var(--white);
 }
 
 .project-detail-column .project-section-eyebrow {
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .project-detail-column .eyebrow-line {
-  background-color: white !important;
+  background-color: var(--white) !important;
 }
 
 
@@ -261,36 +286,47 @@
 
 
 /* ========================================
-   RESPONSIVE – TABLET
+   TABLET
+   721px – 1000px
 ======================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 721px) {
 
   .project-detail-intro {
-    margin: 5rem auto;
+    margin-top: 5rem;
     padding: 0 4rem;
   }
 
   .project-detail-intro-top h1 {
-    font-size: clamp(3.5rem, 9vw, 6rem);
+    font-size: clamp(3.5rem, 8vw, 5rem);
   }
 
   .project-detail-info {
-    gap: 2.5rem;
-    margin-top: 4rem;
+    gap: 1.5rem;
+  }
+
+  .project-info-label {
+    font-size: 1rem;
+  }
+
+  .project-info-value {
+    font-size: 1rem;
   }
 
   .project-detail-text {
-    margin: 5rem 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .project-detail-image-section {
-    margin: 5rem 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     gap: 3rem;
   }
 
   .project-detail-two-column-section {
-    padding: 5rem 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     gap: 3rem;
   }
 
@@ -302,13 +338,14 @@
 
 
 /* ========================================
-   RESPONSIVE – MOBIL
+   MOBIL
+   720px og ned
 ======================================== */
 
 @media (max-width: 720px) {
 
   /* -------------------------
-     Generelt
+     GENERELT
   ------------------------- */
 
   .project-detail {
@@ -318,75 +355,104 @@
 
 
   /* -------------------------
-     Projekt intro
+     PROJEKT INTRO
   ------------------------- */
 
   .project-detail-intro {
     width: 100%;
     margin: 0;
-    padding: 3.5rem 1.5rem 4rem;
+    padding: 3.5rem 1.5rem 3rem;
     box-sizing: border-box;
   }
 
 
   /* -------------------------
-     Titel
+     TITEL
   ------------------------- */
 
   .project-detail-intro-top {
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .project-detail-intro-top h1 {
-    font-size: clamp(3rem, 15vw, 5rem);
+    font-size: clamp(3rem, 14vw, 5rem);
     line-height: 0.9;
     overflow-wrap: break-word;
   }
 
 
   /* -------------------------
-     Links
-  ------------------------- */
-
-  .project-links {
-    gap: 0.8rem 1.2rem;
-  }
-
-  .project-links a {
-    font-size: 1rem;
-  }
-
-
-  /* -------------------------
-     Info
+     INFO
   ------------------------- */
 
   .project-detail-info {
-    grid-template-columns: 1fr;
-    gap: 1.8rem;
-    margin-top: 4rem;
+    display: grid;
+
+    /* VIGTIGT:
+       3 kolonner også på mobil,
+       men med mindre tekst */
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 0.75rem;
+
+    width: 100%;
   }
 
   .project-info-item {
-    gap: 0.2rem;
+    min-width: 0;
+    gap: 0.3rem;
   }
 
   .project-info-label {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    line-height: 1;
   }
 
   .project-info-value {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.8rem;
+    line-height: 1.3;
+
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .project-info-item:last-child {
+    justify-self: end;
+    text-align: right;
   }
 
 
   /* -------------------------
-     Normal tekstsektion
+     LINKS
+  ------------------------- */
+
+  .detail-project-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+
+    margin: 0 1.5rem 4rem;
+  }
+
+  .detail-project-links a {
+    flex: 0 0 auto;
+
+    white-space: nowrap;
+
+    font-size: 0.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+
+  /* -------------------------
+     NORMAL TEKSTSEKTION
   ------------------------- */
 
   .project-detail-text {
-    margin: 4rem 1.5rem;
+    margin: 0 1.5rem 3rem;
     gap: 1.2rem;
   }
 
@@ -401,13 +467,43 @@
   }
 
 
-  /* -------------------------
-     Rød 2-kolonne sektion
-  ------------------------- */
+  @media (max-width: 720px) {
+
+  /* ========================================
+     RØD SEKTION
+  ======================================== */
+
+  .project-detail-colored-section {
+    width: 100%;
+    margin: 0;
+    padding: 4rem 0;
+  }
+
+  .project-detail-colored-content {
+    margin: 0 1.5rem;
+    gap: 1rem;
+  }
+
+  .project-detail-colored-content h2 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .project-detail-colored-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+  /* ========================================
+     RØD SEKTION – 2 KOLONNER
+  ======================================== */
 
   .project-detail-two-column-section {
-    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
 
+    grid-template-columns: 1fr;
     gap: 3.5rem;
 
     padding: 4rem 1.5rem;
@@ -426,34 +522,10 @@
     font-size: 1rem;
     line-height: 1.5;
   }
-
-
-  /* -------------------------
-     Rød normal sektion
-  ------------------------- */
-
-  .project-detail-colored-section {
-    padding: 2rem 0;
-  }
-
-  .project-detail-colored-content {
-    margin: 2rem 1.5rem;
-    gap: 1rem;
-  }
-
-  .project-detail-colored-content h2 {
-    font-size: clamp(2rem, 9vw, 3rem);
-    line-height: 1.05;
-  }
-
-  .project-detail-colored-content p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
+}
 
   /* -------------------------
-     Billede + tekst
+     BILLEDE + TEKST
   ------------------------- */
 
   .project-detail-image-section {
@@ -492,7 +564,7 @@
 
 
   /* -------------------------
-     Eyebrow
+     EYEBROW
   ------------------------- */
 
   .project-section-eyebrow {
@@ -506,7 +578,8 @@
 
 
 /* ========================================
-   EKSTRA SMÅ MOBILER
+   MEGET SMÅ MOBILER
+   400px og ned
 ======================================== */
 
 @media (max-width: 400px) {
@@ -514,6 +587,27 @@
   .project-detail-intro {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .project-detail-intro-top h1 {
+    font-size: clamp(2.7rem, 15vw, 4rem);
+  }
+
+  .project-detail-info {
+    gap: 0.5rem;
+  }
+
+  .project-info-label {
+    font-size: 0.65rem;
+  }
+
+  .project-info-value {
+    font-size: 0.7rem;
+  }
+
+  .detail-project-links {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .project-detail-text {
@@ -534,9 +628,5 @@
   .project-detail-colored-content {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
-  }
-
-  .project-detail-intro-top h1 {
-    font-size: clamp(2.7rem, 15vw, 4rem);
   }
 }

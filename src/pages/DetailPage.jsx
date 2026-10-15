@@ -27,49 +27,49 @@ function DetailPage() {
       <div className="project-detail-intro">
         {/* TITEL + LINKS */}
         <div className="project-detail-intro-top">
+          {/* INFO-SKEMA */}
+          <div className="project-detail-info">
+            <div className="project-info-item">
+              <p className="project-info-label">PROJEKTPERIODE</p>
+              <p className="project-info-value">{year}</p>
+            </div>
+
+            <div className="project-info-item">
+              <p className="project-info-label">REDSKABER & METODER</p>
+              <p className="project-info-value">{tools.join(", ")}</p>
+            </div>
+
+            <div className="project-info-item">
+              <p className="project-info-label">OMRÅDER</p>
+              <p className="project-info-value">{tags.join(", ")}</p>
+            </div>
+          </div>
+
           <h1>{title}</h1>
-
-          <div className="project-links">
-            {project.links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* INFO-SKEMA */}
-        <div className="project-detail-info">
-          <div className="project-info-item">
-            <p className="project-info-label">Projektperiode</p>
-            <p className="project-info-value">{year}</p>
-          </div>
-
-          <div className="project-info-item">
-            <p className="project-info-label">Redskaber</p>
-            <p className="project-info-value">{tools.join(", ")}</p>
-          </div>
-
-          <div className="project-info-item">
-            <p className="project-info-label">Områder</p>
-            <p className="project-info-value">{tags.join(", ")}</p>
-          </div>
         </div>
       </div>
 
       {/* Første indholdssektion */}
       <div className="project-detail-text">
         <div className="project-section-eyebrow">
-          <span className="eyebrow-number">Intro</span>
+          <span className="eyebrow-number">INTRO</span>
         </div>
 
         <h2>{project.title2}</h2>
         <p>{project.description2}</p>
+      </div>
+
+      <div className="detail-project-links">
+        {project.links.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.label}
+          </a>
+        ))}
       </div>
 
       {/* Title 3 + Title 4 */}
@@ -158,7 +158,7 @@ function DetailPage() {
         <div className="project-detail-colored-section">
           <div className="project-detail-colored-content">
             <div className="project-section-eyebrow">
-              <span className="eyebrow-number">Opsamling</span>
+              <span className="eyebrow-number">OPSAMLING</span>
             </div>
             <h2>{project.title5}</h2>
             <p>{project.description5}</p>
@@ -170,7 +170,7 @@ function DetailPage() {
       <div className="project-detail-colored-section">
         <div className="project-detail-colored-content">
           <div className="project-section-eyebrow">
-            <span>Fremadrettet</span>
+            <span>FREMADRETTET</span>
           </div>
           <h2>{project.title6}</h2>
           <p>{project.description6}</p>

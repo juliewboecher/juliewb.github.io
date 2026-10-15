@@ -3,11 +3,13 @@ import "./KompetencerSection.css";
 function KompetencerSection() {
   return (
     <section className="kompetencer-section">
-      <h2>Mine Kompetencer</h2>
-      <p>
-        USER RESEARCH, UX/UI DESIGN, FRONTEND, PROTOTYPING, CONTENT CREATION,
-        ACCESSIBILITY, BRANDIDENTITET, ONBOARDING, DESIGN SYSTEM
-      </p>
+      <div className="kompetencer-top">
+        <h2>Mine Kompetencer</h2>
+        <p>
+          USER RESEARCH, UX/UI DESIGN, FRONTEND, PROTOTYPING, CONTENT CREATION,
+          ACCESSIBILITY, BRANDIDENTITET, ONBOARDING, DESIGN SYSTEM
+        </p>
+      </div>
       <h2>Værktøjer</h2>
       <div className="about-tools">
         <img src={`${import.meta.env.BASE_URL}figma.svg`} alt="Figma" />

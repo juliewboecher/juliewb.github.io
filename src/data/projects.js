@@ -1,8 +1,8 @@
 const projects = [
   {
     id: 1,
-    slug: "LA RŌUGE, Koncept- og subbrandudvikling",
-    title: "LA RŌUGE, Koncept- og subbrandudvikling",
+    slug: "LA ROUGE, Koncept- og subbrandudvikling",
+    title: "LA ROUGE, Koncept- og subbrandudvikling",
     year: "2026",
     tags: ["Designsystem", "Brandidentitet", "Konceptudvikling"],
     tools: ["Figma"],
@@ -14,11 +14,7 @@ const projects = [
       },
       {
         label: "Branddeck",
-        href: "https://github.com/juliewboecher/mellemrum.git",
-      },
-      {
-        label: "Koncept & Løsning",
-        href: "https://github.com/juliewboecher/mellemrum.git",
+        href: "https://drive.google.com/file/d/1lumbtd4E0yrWVnMdzn7RiXZ6QMS_IEnt/view?pli=1",
       },
       {
         label: "Research",
@@ -44,15 +40,19 @@ const projects = [
       "À l'avant er feminint, moderne og sofistikeret, men aldrig højtideligt. De taler til kvinder som ligeværdige og deres sprog er enkelt og velovervejet med plads til at være legende. Deres farvepalette lægger sig tydeligt op ad LA RŌUGE's, men adskiller sig med den stærke røde og bløde lyserøde farve. Logoet er legende og med appel til den stærke moderne kvinde.",
     image4b: `${import.meta.env.BASE_URL}Larougebrand.png`,
     title4c: "Sælg-flow",
-    description4c: "Sælg-flowet er intuitivt og nemt at bruge. Det er designet til at motivere og realisere hvor nemt og smart det er at sælge sit tøj til À l'avant BY LA RŌUGE.",
+    description4c:
+      "Sælg-flowet er intuitivt og nemt at bruge. Det er designet til at motivere og realisere hvor nemt og smart det er at sælge sit tøj til À l'avant BY LA RŌUGE.",
     image4c: `${import.meta.env.BASE_URL}Larougesælg.png`,
     title4d: "Filtrering",
-    description4d: "Muligheden for at filtrere er helt afgørende for målgruppen. Det er den feature der gør at de vælger online secondhand-shopping, frem for fysisk. Derfor har vi inplementeret det i vores design.",
+    description4d:
+      "Muligheden for at filtrere er helt afgørende for målgruppen. Det er den feature der gør at de vælger online secondhand-shopping, frem for fysisk. Derfor har vi inplementeret det i vores design.",
     image4d: `${import.meta.env.BASE_URL}Larougefilter.png`,
     title5: "Den røde tråd",
-    description5: "Det gennemgående tema i vores design er at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart at de to brands henvender sig til forskellige målgrupper.",
+    description5:
+      "Det gennemgående tema i vores design er at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart at de to brands henvender sig til forskellige målgrupper.",
     title6: "Hvis gik videre med det?",
-    description6: "Herfra ville vi færdigvikle sælg-flowet og beslutte hvilke brands der skal inkluderes i À l'avant's udvalg. Derudover ville vi overveje hvordan À l'avant skal fremtræde på sociale medier.",
+    description6:
+      "Herfra ville vi færdigvikle sælg-flowet og beslutte hvilke brands der skal inkluderes i À l'avant's udvalg. Derudover ville vi overveje hvordan À l'avant skal fremtræde på sociale medier.",
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const projects = [
     title: "Vuuh, Design Better Onboarding",
     year: "2026",
     tags: ["Figma Prototype", "User flow", "Onboarding"],
-    tools: ["Figma"],
+    tools: ["Figma", "Heuristisk Evaluering", "Cognative Walkthrough"],
     image: `${import.meta.env.BASE_URL}Vuuhmockup.png`,
     links: [
       {
@@ -79,7 +79,8 @@ const projects = [
     description3:
       "Vuuh's onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step, hvor de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen kan være, at brugeren giver op før nødvendige steps er fuldført.",
     title4: "Optimering",
-    description4: "Vi har udvalgt nogle essentielle problemer, som er nødvendige for at få brugeren til at gennemføre onboarding. Vi har fokuseret på at skabe en løsning, som sikrer at brugeren gennemfører onboarding. Det har vi gjordt ved at inplementere guided steps, som visuelt indrammer hvad brugeren skal gøre.",
+    description4:
+      "Vi har udvalgt nogle essentielle problemer, som er nødvendige for at få brugeren til at gennemføre onboarding. Vi har fokuseret på at skabe en løsning, som sikrer at brugeren gennemfører onboarding. Det har vi gjordt ved at inplementere guided steps, som visuelt indrammer hvad brugeren skal gøre.",
     title4a: "En succesfuld succes-side",
     description4a:
       "Ved en succes-side skal det være tydeligt at brugeren har gennemført et step, men også hvad næste step er, hvis der er et. Derfor har vi fremhævet vigtige informationer samt en knap som fører brugeren direkte videre.",
@@ -133,7 +134,8 @@ const projects = [
     description3:
       "Det største problem med Mellemrum var tilmeldingsflowet. Tilmeldinger blev ikke gemt i en database. Brugeren modtog heller ingen bekræftelse ved tilmelding, og der var ingen måde at se sin tilmelding på efterfølgende. Derudover manglede der forebyggende fejlhåndtering, hvis der opstod fejl under hentning af data eller under tilmelding. Disse fejl ville gøre brugeren utryg og forvirret ved brug af appen, og derfor ikke gøre processen nemmere for brugeren, som egentlig er meningen med appen.",
     title4: "Optimering",
-    description4: "I min optimerede løsning kan brugere tilmelde sig via tilmeldningsflowet og herefter både modtage en bekræftelse og se sin tilmelding samlet et sted i appen. Jeg har fokueret på at skabe en robust løsning med alt det som ligger bag designet. Stærke UI-states og fejlhåndtering så jeg sikrer at flowet kører, selvom fejl kan opstå.",
+    description4:
+      "I min optimerede løsning kan brugere tilmelde sig via tilmeldningsflowet og herefter både modtage en bekræftelse og se sin tilmelding samlet et sted i appen. Jeg har fokueret på at skabe en robust løsning med alt det som ligger bag designet. Stærke UI-states og fejlhåndtering så jeg sikrer at flowet kører, selvom fejl kan opstå.",
     title4a: "Beskræftelse ved tilmelding",
     description4a:
       "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Jeg har tilføjet en succesmelding når man har trykket på tilmeld. Det kan ses implementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl om de fik trykket på tilmeld.",

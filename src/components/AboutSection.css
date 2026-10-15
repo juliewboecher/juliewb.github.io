@@ -1,11 +1,12 @@
 
 
 .about-section {
-  padding: 3rem 3rem;
+  padding: 10rem 3rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 3rem;
+  background-color: var(--primær);
 }
 
 .about-tools {
@@ -14,9 +15,28 @@
   gap: 1rem;
 }
 
-.about-image {
-  max-width: 1000px;
-  height: auto;
+.about-tools img {
+  width: 72px;
+  height: 72px;
+}
+
+.about-title {
+  color: var(--sekundær1);
+}
+
+.about-right h2 {
+  color: var(--white);
+}
+
+.about-right p {
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.read-more-about-me {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 720px) {

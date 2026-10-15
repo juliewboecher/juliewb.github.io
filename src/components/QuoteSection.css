@@ -1,0 +1,137 @@
+.quote-section {
+  padding: 10rem 3rem;
+  background-color: var(--primær);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  gap: 4rem;
+}
+
+.quote-section-venstre {
+  flex: 1;
+  min-width: 0;
+}
+
+.quote-title {
+  color: #ffffff;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.quote-highlight {
+  color: var(--sekundær1);
+}
+
+.quote-author {
+  color: #ffffff;
+
+  margin: 1rem 0 0;
+
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.3;
+}
+
+.quote-section-højre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex-shrink: 0;
+}
+
+.quote-section-højre a {
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 0.7rem 1.2rem;
+
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  white-space: nowrap;
+}
+
+.quote-section-højre a:hover {
+  color: var(--sekundær1);
+}
+
+.quote-reveal {
+  transform: translateX(-80px);
+}
+
+
+/* TABLET */
+@media (max-width: 1000px) {
+
+  .quote-section {
+    padding: 7rem 3rem;
+    gap: 2rem;
+  }
+
+  .quote-title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
+}
+
+
+/* MOBIL */
+@media (max-width: 720px) {
+
+  .quote-section {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 5rem 1.5rem;
+
+    gap: 2rem;
+  }
+
+  .quote-section-venstre {
+    width: 100%;
+  }
+
+  .quote-title {
+    color: #ffffff;
+
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+    line-height: 1.05;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-highlight {
+    color: var(--sekundær1);
+  }
+
+  .quote-author {
+    color: #ffffff;
+
+    font-size: 1rem;
+    line-height: 1.4;
+
+    margin-top: 1rem;
+  }
+
+  .quote-section-højre {
+    width: 100%;
+    justify-content: flex-start;
+
+    margin-top: 0;
+  }
+
+  .quote-section-højre a {
+    color: #ffffff;
+
+    padding: 0.5rem 0;
+
+    font-size: 1rem;
+  }
+
+}

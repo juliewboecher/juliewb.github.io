@@ -1,3 +1,42 @@
 .project-section {
-  margin: 0 3rem;
+  background-color: var(--background-color);
+  padding: 8rem 3rem;
+}
+
+.project-section > h2 {
+  margin-bottom: 5rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card .project-links a {
+  color: var(--white);
+}
+
+.se-alle-projekter {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .project-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .project-cards {
+    gap: 5rem;
+  }
+  .project-links a {
+    border-radius: 0;
+  }
 }

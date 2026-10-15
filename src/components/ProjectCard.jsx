@@ -1,24 +1,33 @@
-import "/src/components/ProjectCard.css";
+import { Link } from "react-router";
+import "./ProjectCard.css";
 
 function ProjectCard({ project }) {
-  const { year, title, description, image, tags, links } = project;
+  const { id, year, title, description, image, tags, links } = project;
+
   return (
     <article className="project-card">
-      <div classNme="project-card-left">
-        <img className="project-image" src={`${image}`} alt={title} />
-      </div>
-      <div className="project-card-right">
-        <h2>{title}</h2>
+      <Link to={`/projects/${id}`} className="project-card-image">
+        <img src={image} alt={title} className="project-image" />
+      </Link>
+
+      <div className="project-card-info">
         <p>{year}</p>
-        <p>{tags.join(", ")}</p>
-        <p>{description}</p>
+
+        <h2>{title}</h2>
+
+        <div className="project-detail-tags">
+          {tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+
         <ul className="project-links">
           {links.map((link) => (
-            <button className="project-link" key={link.label}>
+            <li key={link.label}>
               <a href={link.href} target="_blank" rel="noopener noreferrer">
                 {link.label}
               </a>
-            </button>
+            </li>
           ))}
         </ul>
       </div>

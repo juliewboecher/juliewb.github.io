@@ -5,7 +5,10 @@
   --font-family: 'Passion One';
   
   --black: #1d2430;
-  --red: #B31619;
+  --primær: #9A393C;
+  --sekundær1: #BBDCDA;
+  --gray: #D8D8D8;
+  --white: #f4f4f4;
 
   background: #f7f4ef;
   font-synthesis: none;
@@ -21,6 +24,20 @@
 body {
   margin: 0;
   min-width: 320px;
+   background-color: #f3efe5;
+
+  background-image:
+    radial-gradient(
+      rgba(80, 60, 40, 0.04) 0.7px,
+      transparent 0.7px
+    ),
+    radial-gradient(
+      rgba(255, 255, 255, 0.3) 1px,
+      transparent 1px
+    );
+
+  background-size: 4px 4px, 7px 7px;
+  background-position: 0 0, 2px 3px;
 }
 
 a {
@@ -78,7 +95,7 @@ p {
   color: #526173;
   line-height: 1.65;
   font-family: 'Patrick Hand';
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -90,6 +107,27 @@ a {
 
 li {
   font-family: 'Patrick Hand';
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 

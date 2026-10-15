@@ -1,0 +1,262 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.about-page-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-title-name {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  margin: 0;
+}
+
+.about-page-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================
+   INTRO TEKST
+========================= */
+
+.about-page-indhold {
+  margin-top: 6rem;
+  max-width: 900px;
+}
+
+.about-page-indhold h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.about-page-indhold p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* =========================
+   HVORFOR ARBEJDE MED MIG
+========================= */
+
+.about-page-me {
+  width: 100%;
+  padding: 7rem 3rem;
+  box-sizing: border-box;
+
+  background-color: #9A393C;
+  color: #ffffff;
+}
+
+.about-page-me-content {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.about-page-me h1 {
+  color: #ffffff;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  margin: 0 0 2rem;
+}
+
+.about-page-me p {
+  color: #ffffff;
+  max-width: 900px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* =========================
+   ERFARING
+========================= */
+
+.about-experience {
+  margin-top: 3rem;
+}
+
+.about-experience > h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  margin-bottom: 5rem;
+}
+
+.about-experience-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+
+  padding: 3rem 0;
+  border-top: 1px solid var(--black);
+}
+
+.about-experience-item > p:first-child {
+  grid-column: 1;
+  margin: 0;
+  font-family: "Patrick Hand";
+}
+
+.about-experience-item h2 {
+  grid-column: 2;
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.about-experience-item > p:last-child {
+  grid-column: 2;
+  margin: 0rem 0 0;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 720px) {
+
+  .about-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+  }
+
+
+  /* INTRO */
+
+  .about-page-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-title-name {
+    font-size: clamp(3rem, 14vw, 5rem);
+    line-height: 0.95;
+  }
+
+  .about-page-image {
+    width: 100%;
+  }
+
+
+  /* INTRO TEKST */
+
+  .about-page-indhold {
+    margin-top: 4rem;
+  }
+
+  .about-page-indhold h2 {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-page-indhold p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+  /* =========================
+     HVORFOR ARBEJDE MED MIG
+  ========================= */
+
+  .about-page-me {
+    width: 100%;
+    padding: 4rem 1.5rem;
+    box-sizing: border-box;
+
+    background-color: #9A393C;
+    color: #ffffff;
+  }
+
+  .about-page-me-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .about-page-me h1 {
+    color: #ffffff;
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 1;
+    margin: 0 0 1.5rem;
+  }
+
+  .about-page-me p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+
+  /* =========================
+     ERFARING
+  ========================= */
+
+  .about-experience {
+    margin-top: 6rem;
+  }
+
+  .about-experience > h1 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+
+  .about-experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding: 2rem 0;
+  }
+
+  .about-experience-item > p:first-child {
+    order: 1;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .about-experience-item h2 {
+    order: 2;
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    line-height: 1.1;
+  }
+
+  .about-experience-item > p:last-child {
+    order: 3;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

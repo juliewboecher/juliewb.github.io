@@ -51,6 +51,7 @@ const projects = [
     title5: "Den røde tråd",
     description5: "Det gennemgående tema i vores design er at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart at de to brands henvender sig til forskellige målgrupper.",
     title6: "Fokus fremadrettet",
+    description6: "Herfra ville vi færdigvikle sælg-flowet og beslutte hvilke brands der skal inkluderes i À l'avant's udvalg. Derudover ville vi overveje hvordan À l'avant skal fremtræde på sociale medier.",
   },
   {
     id: 2,

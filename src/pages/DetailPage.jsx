@@ -89,6 +89,7 @@ function DetailPage() {
       <Reveal>
         <div className="project-detail-image-section">
           <div className="project-detail-image-text">
+            <span className="eyebrow-number">01</span>
             <h2 className="project-subtitle">{project.title4a}</h2>
             <p>{project.description4a}</p>
           </div>
@@ -102,6 +103,7 @@ function DetailPage() {
       <Reveal>
         <div className="project-detail-image-section">
           <div className="project-detail-image-text">
+            <span className="eyebrow-number">02</span>
             <h2 className="project-subtitle">{project.title4b}</h2>
             <p>{project.description4b}</p>
           </div>
@@ -115,6 +117,7 @@ function DetailPage() {
       <Reveal>
         <div className="project-detail-image-section">
           <div className="project-detail-image-text">
+            <span className="eyebrow-number">03</span>
             <h2 className="project-subtitle">{project.title4c}</h2>
             <p>{project.description4c}</p>
           </div>
@@ -128,6 +131,7 @@ function DetailPage() {
       <Reveal>
         <div className="project-detail-image-section">
           <div className="project-detail-image-text">
+            <span className="eyebrow-number">04</span>
             <h2 className="project-subtitle">{project.title4d}</h2>
             <p>{project.description4d}</p>
           </div>

@@ -125,26 +125,27 @@ const projects = [
     ],
     title2: "Om projektet",
     description2:
-      "Mellemrum er en fiktiv webapp, designet til at samle koncerter, talks, workshops og fællesskaber, så du lettere kan opdage noget, du ikke allerede kendte.",
+      "Mellemrum er en fiktiv webapp, designet til at samle koncerter, talks, workshops og fællesskaber, så du lettere kan opdage noget, du ikke allerede kendte. I projektet har jeg fokuseret på at optimere de flows som ikke fungerede optimalt. Det har jeg gjort med React og Supabase for at bygge en stærk og robust løsning.",
     title3: "Udfordring",
     description3:
       "Det største problem med Mellemrum var tilmeldingsflowet. Tilmeldinger blev ikke gemt i en database. Brugeren modtog heller ingen bekræftelse ved tilmelding, og der var ingen måde at se sin tilmelding på efterfølgende. Derudover manglede der forebyggende fejlhåndtering, hvis der opstod fejl under hentning af data eller under tilmelding. Disse fejl ville gøre brugeren utryg og forvirret ved brug af appen, og derfor ikke gøre processen nemmere for brugeren, som egentlig er meningen med appen.",
     title4: "Optimering",
+    description4: "I min optimerede løsning kan brugere tilmelde sig via tilmeldningsflowet og herefter både modtage en bekræftelse og se sin tilmelding samlet et sted i appen. Jeg har fokueret på at skabe en robust løsning med alt det som ligger bag designet. Stærke UI-states og fejlhåndtering så jeg sikrer at flowet kører, selvom fejl kan opstå.",
     title4a: "Beskræftelse ved tilmelding",
     description4a:
-      "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Ved tilmelding fik brugeren ingen bekræftigelse efter tryk på tilmeld. Min løsning til dette var at tilføje en succesmelding når man har trykket på tilmeld. Det kan ses inplementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl om de fik trykket på tilmeld.",
+      "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Jeg har tilføjet en succesmelding når man har trykket på tilmeld. Det kan ses implementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl om de fik trykket på tilmeld.",
     image4a: `${import.meta.env.BASE_URL}Mellemrumtilmelding.png`,
     title4b: "Fejlmelding ved mangler",
     description4b:
-      "Her er problemet igen indefor området robusthed og sikker fejlhåndtering af UI-states. Hvis brugeren manglede at udfylde enten mail eller navn, når de trykkede på tilmeld, var der ingen fejlmelding af dette. Min løsning var at tilføje henholdsvis en fejlmelding ved indput til navn og indput til mail, som vises hvis der mangler at blive udfyldt. Nu efterlades brugeren ikke med tvivl om, hvorvidt de har udfyldt de nødvendige felter.",
+      "Hvis brugeren mangler at udfylde enten mail eller navn, når de trykker på tilmeld, skal der komme fejlmelding. Derfor implementerede jeg en robust fejlhåndtering af denne UI-state. Nu efterlades brugeren ikke med tvivl om, hvorvidt de har udfyldt de nødvendige felter.",
     image4b: `${import.meta.env.BASE_URL}Mellemrummangler.png`,
     title4c: "Skeleton loading ved nedsat netværkshastighed",
     description4c:
-      "Indenfor performance af koden fandt jeg en usikker håndtering af loading og fetching af kode. Ved loading af billeder og event cards, var der ingen indikation af at noget var ved at blive hentet. Derfor implementerede jeg skeleton loading, som viser et skelet for hvad der loades. Derfor er brugeren ikke længere i tvivl om, at noget bliver hentet, hvis netværket er svagt, eller der sker en anden fejl i hentning af data.",
+      "Indenfor performance af koden var der en usikker håndtering af loading og fetching af kode. Ved loading af billeder og event cards, var der ingen indikation af at noget var ved at blive hentet. Det løste jeg med skeleton loading, som viser et skelet for hvad der loades. Derfor er brugeren ikke længere i tvivl om, at noget bliver hentet, hvis netværket er svagt, eller der sker en anden fejl i hentning af data.",
     image4c: `${import.meta.env.BASE_URL}Mellemrumskeletonkode.png`,
     title4d: "Automatisering af opdatering af data",
     description4d:
-      "Her fandt jeg indenfor relationen til Supabase et potentiale for at automatisere opdateringen af data. Hvis en venue opdaterer sit navn eller url til website, så ændres det ikke automatisk alle steder hvor den venue optræder. For at løse dette, implementerede jeg både i HomePage.jsx og EventPage.jsx, en fetching der lytter efter ændringer i venue data og automatisk opdaterer alle steder, hvor denne venue data bliver brugt.",
+      "Her fandt jeg indenfor relationen til Supabase et potentiale for at automatisere opdateringen af data. Hvis en venue fx. opdaterer sit navn, ændres det ikke automatisk alle steder hvor den venue optræder. For at løse dette, implementerede jeg både i HomePage.jsx og EventPage.jsx, en fetching der lytter efter ændringer i venue data og automatisk opdaterer alle steder, hvor denne venue data bliver brugt.",
     image4d: `${import.meta.env.BASE_URL}Mellemrumauto.png`,
     title5: "Gennemgående problemer",
     description5:

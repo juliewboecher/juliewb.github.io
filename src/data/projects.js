@@ -50,7 +50,7 @@ const projects = [
     image4d: `${import.meta.env.BASE_URL}Larougefilter.png`,
     title5: "Den røde tråd",
     description5: "Det gennemgående tema i vores design er at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart at de to brands henvender sig til forskellige målgrupper.",
-    title6: "Fokus fremadrettet",
+    title6: "Hvis gik videre med det?",
     description6: "Herfra ville vi færdigvikle sælg-flowet og beslutte hvilke brands der skal inkluderes i À l'avant's udvalg. Derudover ville vi overveje hvordan À l'avant skal fremtræde på sociale medier.",
   },
   {
@@ -75,29 +75,29 @@ const projects = [
       "Vuuh oplever at deres brugere oplever problemer under onboarding, og derfor mangler de en klar vejledning for at komme i mål. Vi har udviklet en optimeret onboarding proces, i form af en interaktiv prototype, der guider brugerne gennem essentielle dele af onboarding.",
     title3: "Udfordring",
     description3:
-      "Den overordnede udfordring er, at onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step. De største optimeringmuligheder er ved “demo-ordre”, “succes-side”, “efter udfyldt formular” og “connect to Shopify”. De vigtigste problemer er, at brugeren ikke selvstændigt kan komme videre og rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen kan være, at brugeren giver op før relevante steps er fuldført. Vuuh taber potentielle kunder, som kunne have været undgået ved vejledende onboarding.",
+      "Vuuh's onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step, hvor de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen kan være, at brugeren giver op før nødvendige steps er fuldført.",
     title4: "Optimering",
-    description4: "For at opnå en ",
-    title4a: "succes-side",
+    description4: "Vi har udvalgt nogle essentielle problemer, som er nødvendige for at få brugeren til at gennemføre onboarding. Vi har fokuseret på at skabe en løsning, som sikrer at brugeren gennemfører onboarding. Det har vi gjordt ved at inplementere guided steps, som visuelt indrammer hvad brugeren skal gøre.",
+    title4a: "En succesfuld succes-side",
     description4a:
-      "Problemet med Vuuh's nuværende succes-side er, at det er uklart at brugeren skal åbne Vuuh app efter at succes-siden vises, da det ikke oplyses på siden. Brugeren kommer derfor muligvis ikke videre. Brugeren har brug for ekstra forklaring til af færdiggøre opgaven. Siden ligner desuden ikke andre, og opfylder altså ikke standarden for at “connecte to apps”. På vores optimerede succes-side har vi taget højde for accessibility ift. brugerens indsat, ved at tydeliggøre hvad næste step er. Vi har tilføjet en “click here”-knap som fører brugeren direkte til Vuuh. Vi har fremhævet brugerens shopname, samt at det skal bruges til at connecte til Vuuh.",
+      "Ved en succes-side skal det være tydeligt at brugeren har gennemført et step, men også hvad næste step er, hvis der er et. Derfor har vi fremhævet vigtige informationer samt en knap som fører brugeren direkte videre.",
     image4a: `${import.meta.env.BASE_URL}Vuuhsuccesside.png`,
-    title4b: "Connect to Shopify",
+    title4b: "Minimerede steps ved 'connect to Shopify'",
     description4b:
-      "Vuuhs løsning på “connect to Shopify“-steppet kan skabe forvirring og opfattes som forkert navigering for brugeren. Brugeren trykker på en intuitiv grøn “connect to Shopify”-knap og bliver videresendt til en ny side (outputs) med en helt masse nye muligheder ikke omhandlende Shopify. Vores optimerede “succes-side“ indebærer, at brugeren bliver sendt direkte til en udfyldningsformular, fremfor at skulle gennem siden “outputs“. Sådan sikrer vi at brugeren ved, at de er på sporet, og er motiveret til at fortsætte.",
+      "For at brugeren ikke bliver overvældet, har vi minimeret antallet af steps. Vi har fjernet unødvendige kliks for at forenkle processen.",
     image4b: `${import.meta.env.BASE_URL}Vuuhconnect.png`,
-    title4c: "Efter udfyldt formular",
+    title4c: "Intuitiv 'Efter udfyldt formular'",
     description4c:
-      "Det nuværende modal med “Start free trial“ kan indikere at brugeren er færdig med tilmelding og at man har nået målet. Efter tilmeldingen bliver brugeren sendt til en tom success-side uden en tydelig guide til næste handling. Dette skaber usikkerhed om, hvorvidt processen er gennemført eller ej. Det er ikke intuitivt, for brugeren at de skal gå fra den ene fane til den anden, for at udføre næste step. Desuden skal brugeren klikke på en næsten identisk knap for at bekræfte til sidst. Det skaber forvirring, fordi brugeren tror de allerede har udført det step. Vores optimerede løsning er bygget på guided steps, så brugeren ved præcis hvad næste skridt er, og hvordan man kommer fra side til side. Derfor er der information om næste handling på “succes-siden“ samt en CTA med navigering til næste side. Næste side adskiller sig fra den tidligere, da der nu kun er et overlay, hvor man skal bekræfte connection. På den måde sikrer vi et gridningsfrit brugerflow gennem hele processen.",
+      "Ved Vuuh's nuværende onboarding er der flere steder knapper som ligner hinanden, hvilket kan skabe forvirring. Derfor har vi tydeliggjort knappernes funktioner og fjernet unødvendige.",
     image4c: `${import.meta.env.BASE_URL}Vuuhformular.png`,
-    title4d: "Test-ordre flow",
+    title4d: "Et forståeligt 'Test-ordre flow'",
     description4d:
-      "Vuuhs nuværende “test-ordre flow” giver ingen indikation til, at man skal lave en test-ordre, efter man har connected Vuuh med Shopify. Hvis dette step ikke bliver opfyldt, kan hverken Vuuh eller brugeren være sikker på, at det rent teknisk er opsat korrekt. I vores optimerede “test-ordre flow” får brugeren en loading side efter successfuldt download af test-ordre. Sådan sikrer vi brugeren om, at dette blot er en test-ordre, og at den derfor ikke vil blive vist i deres webshop. Efter en loading-indikator, vises et overlay med “Order is successfully downloaded!“.",
+      "Det er vigtigt at brugeren forstår at steppet med test-ordre ikke vises i deres webshop. Vi har derfor tydeliggjort formidlingen om det, samt en guided gennemgang af hvordan det fungerer.",
     image4d: `${import.meta.env.BASE_URL}Vuuhtestordre.png`,
     title5: "Tværgående mønstre",
     description5:
       "Den nuværende onboarding består af alt for mange steps. Brugeren bliver ikke guided nok og det er ikke intuitivt, hvad næste step er. Især ikke for ikke-erfarne brugere. Brugeren støder gentagende gange på steps, som ser ud til at være det sidste og rammer standstill. Et gennemgående problem er at forhindre fejl. Der mangler guidence og færre steps. Det skal gøres så simpelt som muligt. Vuuhs onboarding tager heller ikke nok hensyn til forskellige typer brugere og deres erfaring. Vi overvejede undervejs at tilføje en step-tracker, som kunne give brugeren et overblik over processen. Vi blev dog enige med Vuuh om, at det ikke var nødvendigt, og at vores guided steps står stærkt i sig selv.",
-    title6: "Fokus fremadrettet",
+    title6: "Næste skridt?",
     description6:
       "Hvordan sørger man for, at onboarding er tilgængelig for både erfarne og ikke-erfarne brugere? Fremadrettet ville vi lægge fokus på hvordan erfarne brugere kan skippe mulige steps, for fleksibilitet og effektivitet, og dermed ramme en bredere målgruppe. Fremadrettet ser vi at vores forslag til guided-steps-onboarding implementeres til resten af flowet, eksempelvis ved de efterfølgende steps med “connect to brands”.",
   },
@@ -138,7 +138,7 @@ const projects = [
     description4b:
       "Her er problemet igen indefor området robusthed og sikker fejlhåndtering af UI-states. Hvis brugeren manglede at udfylde enten mail eller navn, når de trykkede på tilmeld, var der ingen fejlmelding af dette. Min løsning var at tilføje henholdsvis en fejlmelding ved indput til navn og indput til mail, som vises hvis der mangler at blive udfyldt. Nu efterlades brugeren ikke med tvivl om, hvorvidt de har udfyldt de nødvendige felter.",
     image4b: `${import.meta.env.BASE_URL}Mellemrummangler.png`,
-    title4c: "Skeleton loading",
+    title4c: "Skeleton loading ved nedsat netværkshastighed",
     description4c:
       "Indenfor performance af koden fandt jeg en usikker håndtering af loading og fetching af kode. Ved loading af billeder og event cards, var der ingen indikation af at noget var ved at blive hentet. Derfor implementerede jeg skeleton loading, som viser et skelet for hvad der loades. Derfor er brugeren ikke længere i tvivl om, at noget bliver hentet, hvis netværket er svagt, eller der sker en anden fejl i hentning af data.",
     image4c: `${import.meta.env.BASE_URL}Mellemrumskeletonkode.png`,
@@ -149,7 +149,7 @@ const projects = [
     title5: "Gennemgående problemer",
     description5:
       "Overordnet fandt jeg ud af, at Mellemrum manglede overblik til brugeren og bekræftelse og tryghed ved tilmelding. Derudover manglede der en sikker håndtering af fejl i dataflowet. Disse mangler gjorde det usikkert for brugeren at bruge appen.",
-    title6: "Fokus fremadrettet",
+    title6: "Hvad så nu?",
     description6:
       "Fremadrettet ville jeg implementere resten af mine findings fra “Teknisk Audit“. Derudover ville jeg implementere en log-ind-funktion, både for brugeren og for venues. På den måde kan jeg skjule tilmeldinger for brugerne, så de kun kan se antal tilmeldinger, frem for at vise brugeres data på en offentlig side.",
   },
@@ -177,13 +177,13 @@ const projects = [
   },
   {
     id: 5,
-    slug: "Hans Wendelboe Website",
-    title: "Hans Wendelboe Website",
+    slug: "Hanswendelboe.dk",
+    title: "Hanswendelboe.dk",
     year: "2026",
     summary:
       "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
     description:
-      "Jeg arbejder lige nu på at rebrande Hans Wendelboe's hjemmeside for at skabe en mere sammenhængende og moderne online tilstedeværelse.",
+      "Jeg arbejder lige nu på at rebrande Hanswendelboe.dk's for at skabe en mere sammenhængende og moderne online tilstedeværelse.",
     tags: ["SQL-Database", "React", "Brandidentitet", "Re-Design"],
     image: `${import.meta.env.BASE_URL}Hwbmockup.png`,
     links: [

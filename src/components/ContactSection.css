@@ -1,9 +1,8 @@
 .contact-section {
-  padding: 10rem 3rem;
+  padding: 10rem 3rem 2rem;
   border-top: 1px solid #333;
-  display: flex;
-  justify-content: space-between;
-   background-color: #eee9dc;
+
+  background-color: #eee9dc;
 
   background-image:
     repeating-linear-gradient(
@@ -30,55 +29,103 @@
     );
 }
 
-.contact-section p {
-  line-height: 1.6;
-}
 
-.contact-section a {
-  text-decoration: underline;
-  font-size: 1.5rem;
+/* KONTAKT */
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .contact-left h2 {
-  font-size: 12rem;
+  margin: 0;
+  font-size: clamp(7rem, 12vw, 12rem);
+  line-height: 0.8;
 }
+
+
+/* TEKST + LINKS */
 
 .contact-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
 }
+
+.contact-right p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+/* LINKS VANDRET */
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-section a {
+  color: var(--black);
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+
+/* COPYRIGHT */
+
+.contact-copyright {
+  width: 100%;
+
+  margin-top: 8rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid var(--black);
+
+  text-align: center;
+
+  font-family: "Patrick Hand";
+  font-size: 1rem;
+}
+
+
+/* MOBIL */
 
 @media (max-width: 720px) {
 
   .contact-section {
-    width: 100%;
-    max-width: none;
-
-    padding: 4rem 1.25rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    padding: 5rem 1.25rem 1.5rem;
   }
 
   .contact-left h2 {
     font-size: clamp(4rem, 18vw, 7rem);
-    line-height: 0.8;
   }
 
   .contact-right {
-    width: 100%;
+    margin-top: 2rem;
   }
 
   .contact-right p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 0.8rem;
-    overflow-wrap: anywhere;
+    font-size: 1rem;
   }
 
-  .contact-right a {
-    overflow-wrap: anywhere;
+  .contact-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-section a {
+    font-size: 1.1rem;
+  }
+
+  .contact-copyright {
+    margin-top: 5rem;
+    font-size: 0.9rem;
   }
 }

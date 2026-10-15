@@ -159,7 +159,7 @@ function DetailPage() {
       <div className="project-detail-colored-section">
         <div className="project-detail-colored-content">
           <div className="project-section-eyebrow">
-            <span>Hva så nu?</span>
+            <span>Fremadrettet</span>
           </div>
           <h2>{project.title6}</h2>
           <p>{project.description6}</p>

@@ -41,18 +41,18 @@ const projects = [
     image4b: `${import.meta.env.BASE_URL}Larougebrand.png`,
     title4c: "Sælg-flow",
     description4c:
-      "Sælg-flowet er intuitivt og nemt at bruge. Det er designet til at motivere og realisere hvor nemt og smart det er at sælge sit tøj til À l'avant BY LA RŌUGE.",
+      "Sælg-flowet er intuitivt og nemt at bruge. Det er designet til at motivere og realisere hvor nemt og smart det er at sælge sit tøj til À l'avant BY LA RŌUGE. Også her kommer det re-tænkte koncept i spil, ved at give muligheden for at sælge tøj fra andre brands end LA RŌUGE. Der vil være udvalgte brands på forhånd som À l'avant tager imod, for at sikrer ekslusiviteten og kvaliteten af tøjet.",
     image4c: `${import.meta.env.BASE_URL}Larougesælg.png`,
     title4d: "Filtrering",
     description4d:
       "Muligheden for at filtrere er helt afgørende for målgruppen. Det er den feature der gør at de vælger online secondhand-shopping, frem for fysisk. Derfor har vi inplementeret det i vores design.",
     image4d: `${import.meta.env.BASE_URL}Larougefilter.png`,
-    title5: "Den røde tråd",
+    title5: "Koncept og rød tråd",
     description5:
-      "Det gennemgående tema i vores design er at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart at de to brands henvender sig til forskellige målgrupper.",
+      "Vi har omtænkt konceptet, og er endt med en løsning der inkluderer tøj fra andre brands end blot LA RŌUGE. Det giver altså brugerne mulighed for at sende tøj til À l'avant fra en række givne brands, og på den måde skaber vi et unikt og kvalitetssikret udvalg af items. Det gennemgående tema i vores design er, at skabe en tydelig visuel og identitetsmæssig rød tråd mellem LA RŌUGE og À l'avant. Men det skal også stå klart, at de to brands henvender sig til forskellige målgrupper.",
     title6: "Hvis gik videre med det?",
     description6:
-      "Herfra ville vi færdigvikle sælg-flowet og beslutte hvilke brands der skal inkluderes i À l'avant's udvalg. Derudover ville vi overveje hvordan À l'avant skal fremtræde på sociale medier.",
+      "Herfra ville vi færdigudvikle sælg-flowet og beslutte hvilke brands der skal inkluderes i À l'avant's udvalg. Derudover ville vi overveje hvordan À l'avant skal fremtræde på sociale medier.",
   },
   {
     id: 2,
@@ -74,7 +74,7 @@ const projects = [
     ],
     title2: "Om projektet",
     description2:
-      "Vuuh oplever at deres brugere oplever problemer under onboarding, og derfor mangler de en klar vejledning for at komme i mål. Vi har udviklet en optimeret onboarding proces, i form af en interaktiv prototype, der guider brugerne gennem essentielle dele af onboarding.",
+      "Vuuh oplever at deres brugere støder på problemer under onboarding, og derfor mangler de en klar vejledning for at komme i mål. Vi har udviklet en optimeret onboarding proces, i form af en interaktiv prototype, der guider brugerne gennem essentielle dele af onboarding.",
     title3: "Udfordring",
     description3:
       "Vuuh's onboarding udfordrer brugeroplevelsen, ved gentagne gange at efterlade brugeren uden vejledning til næste step, hvor de rammer et standstill. Mangel på succes gør at brugeren ikke ved, om de er færdige eller om der er endnu et step. Konsekvensen kan være, at brugeren giver op før nødvendige steps er fuldført.",
@@ -83,7 +83,7 @@ const projects = [
       "Vi har udvalgt nogle essentielle problemer, som er nødvendige for at få brugeren til at gennemføre onboarding. Vi har fokuseret på at skabe en løsning, som sikrer at brugeren gennemfører onboarding. Det har vi gjordt ved at inplementere guided steps, som visuelt indrammer hvad brugeren skal gøre.",
     title4a: "En succesfuld succes-side",
     description4a:
-      "Ved en succes-side skal det være tydeligt at brugeren har gennemført et step, men også hvad næste step er, hvis der er et. Derfor har vi fremhævet vigtige informationer samt en knap som fører brugeren direkte videre.",
+      "Ved en succes-side skal det være tydeligt at brugeren har gennemført et step, men også hvad næste step er, hvis der er et. Derfor har vi fremhævet vigtige informationer, samt en knap som fører brugeren direkte videre i flowet.",
     image4a: `${import.meta.env.BASE_URL}Vuuhsuccesside.png`,
     title4b: "Minimerede steps ved 'connect to Shopify'",
     description4b:
@@ -91,7 +91,7 @@ const projects = [
     image4b: `${import.meta.env.BASE_URL}Vuuhconnect.png`,
     title4c: "Intuitiv 'Efter udfyldt formular'",
     description4c:
-      "Ved Vuuh's nuværende onboarding er der flere steder knapper som ligner hinanden, hvilket kan skabe forvirring. Derfor har vi tydeliggjort knappernes funktioner og fjernet unødvendige.",
+      "Ved Vuuh's nuværende onboarding er der flere steder knapper, som ligner hinanden, hvilket kan skabe forvirring. Derfor har vi tydeliggjort knappernes funktioner og fjernet unødvendige.",
     image4c: `${import.meta.env.BASE_URL}Vuuhformular.png`,
     title4d: "Et forståeligt 'Test-ordre flow'",
     description4d:
@@ -99,7 +99,7 @@ const projects = [
     image4d: `${import.meta.env.BASE_URL}Vuuhtestordre.png`,
     title5: "Tværgående mønstre",
     description5:
-      "Den nuværende onboarding består af alt for mange steps. Brugeren bliver ikke guided nok og det er ikke intuitivt, hvad næste step er. Især ikke for ikke-erfarne brugere. Brugeren støder gentagende gange på steps, som ser ud til at være det sidste og rammer standstill. Et gennemgående problem er at forhindre fejl. Der mangler guidence og færre steps. Det skal gøres så simpelt som muligt. Vuuhs onboarding tager heller ikke nok hensyn til forskellige typer brugere og deres erfaring. Vi overvejede undervejs at tilføje en step-tracker, som kunne give brugeren et overblik over processen. Vi blev dog enige med Vuuh om, at det ikke var nødvendigt, og at vores guided steps står stærkt i sig selv.",
+      "Den nuværende onboarding består af alt for mange steps. Brugeren bliver ikke guided nok og det er ikke intuitivt, hvad næste step er. Især ikke for ikke-erfarne brugere. Brugeren støder gentagende gange på steps, som ser ud til at være det sidste og rammer standstill. Der mangler guidence og færre steps. Det skal gøres så simpelt som muligt. Vuuhs onboarding tager heller ikke nok hensyn til forskellige typer brugere og deres erfaring på digitale platforme. Vi overvejede undervejs at tilføje en step-tracker, som kunne give brugeren et overblik over processen. Vi blev dog enige med Vuuh om, at det ikke var nødvendigt, og at vores guided steps står stærkt i sig selv.",
     title6: "Næste skridt?",
     description6:
       "Hvordan sørger man for, at onboarding er tilgængelig for både erfarne og ikke-erfarne brugere? Fremadrettet ville vi lægge fokus på hvordan erfarne brugere kan skippe mulige steps, for fleksibilitet og effektivitet, og dermed ramme en bredere målgruppe. Fremadrettet ser vi at vores forslag til guided-steps-onboarding implementeres til resten af flowet, eksempelvis ved de efterfølgende steps med “connect to brands”.",
@@ -135,18 +135,18 @@ const projects = [
       "Det største problem med Mellemrum var tilmeldingsflowet. Tilmeldinger blev ikke gemt i en database. Brugeren modtog heller ingen bekræftelse ved tilmelding, og der var ingen måde at se sin tilmelding på efterfølgende. Derudover manglede der forebyggende fejlhåndtering, hvis der opstod fejl under hentning af data eller under tilmelding. Disse fejl ville gøre brugeren utryg og forvirret ved brug af appen, og derfor ikke gøre processen nemmere for brugeren, som egentlig er meningen med appen.",
     title4: "Optimering",
     description4:
-      "I min optimerede løsning kan brugere tilmelde sig via tilmeldningsflowet og herefter både modtage en bekræftelse og se sin tilmelding samlet et sted i appen. Jeg har fokueret på at skabe en robust løsning med alt det som ligger bag designet. Stærke UI-states og fejlhåndtering så jeg sikrer at flowet kører, selvom fejl kan opstå.",
+      "I min optimerede løsning kan brugere tilmelde sig via tilmeldningsflowet og herefter både modtage en bekræftelse, og se sin tilmelding samlet et sted i appen. Jeg har fokueret på at skabe en robust løsning med alt det, som ligger bag designet. Stærke UI-states og fejlhåndtering så jeg sikrer at flowet kører, selvom der opstår fejl.",
     title4a: "Beskræftelse ved tilmelding",
     description4a:
-      "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Jeg har tilføjet en succesmelding når man har trykket på tilmeld. Det kan ses implementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl om de fik trykket på tilmeld.",
+      "Her var mit fokus at skabe robusthed og fejlhåndtering af UI-states. Jeg har tilføjet en succesmelding når man har trykket på tilmeld. Det kan ses implementeret ved at tilmelde sig og derefter se en bekræftelse. På den måde er brugeren ikke i tvivl, om de fik trykket på tilmeld.",
     image4a: `${import.meta.env.BASE_URL}Mellemrumtilmelding.png`,
     title4b: "Fejlmelding ved mangler",
     description4b:
-      "Hvis brugeren mangler at udfylde enten mail eller navn, når de trykker på tilmeld, skal der komme fejlmelding. Derfor implementerede jeg en robust fejlhåndtering af denne UI-state. Nu efterlades brugeren ikke med tvivl om, hvorvidt de har udfyldt de nødvendige felter.",
+      "Hvis brugeren mangler at udfylde enten mail eller navn, når de trykker på tilmeld, skal der komme fejlmelding. Derfor implementerede jeg en robust fejlhåndtering af dette UI-state. Nu efterlades brugeren ikke med tvivl om, hvorvidt de har udfyldt de nødvendige felter.",
     image4b: `${import.meta.env.BASE_URL}Mellemrummangler.png`,
     title4c: "Skeleton loading ved nedsat netværkshastighed",
     description4c:
-      "Indenfor performance af koden var der en usikker håndtering af loading og fetching af kode. Ved loading af billeder og event cards, var der ingen indikation af at noget var ved at blive hentet. Det løste jeg med skeleton loading, som viser et skelet for hvad der loades. Derfor er brugeren ikke længere i tvivl om, at noget bliver hentet, hvis netværket er svagt, eller der sker en anden fejl i hentning af data.",
+      "Indenfor performance af koden var der en usikker håndtering af loading og fetching af kode. Ved loading af billeder og event-cards, var der ingen indikation af, at noget var ved at blive hentet. Det løste jeg med skeleton loading, som viser et skelet for hvad der loades. Dermed er brugeren ikke længere i tvivl om, at noget bliver hentet, hvis netværket er svagt, eller der sker en anden fejl i hentning af data.",
     image4c: `${import.meta.env.BASE_URL}Mellemrumskeletonkode.png`,
     title4d: "Automatisering af opdatering af data",
     description4d:
@@ -154,7 +154,7 @@ const projects = [
     image4d: `${import.meta.env.BASE_URL}Mellemrumauto.png`,
     title5: "Gennemgående problemer",
     description5:
-      "Overordnet fandt jeg ud af, at Mellemrum manglede overblik til brugeren og bekræftelse og tryghed ved tilmelding. Derudover manglede der en sikker håndtering af fejl i dataflowet. Disse mangler gjorde det usikkert for brugeren at bruge appen.",
+      "Overordnet fandt jeg ud af, at Mellemrum manglede overblik for brugeren, samt bekræftelse og tryghed ved tilmelding. Derudover manglede der en sikker håndtering af fejl i dataflowet. Disse mangler gjorde det usikkert for brugeren at bruge appen. Efter min optimering er flowet blevet mere stabilt og forudsigeligt.",
     title6: "Hvad så nu?",
     description6:
       "Fremadrettet ville jeg implementere resten af mine findings fra “Teknisk Audit“. Derudover ville jeg implementere en log-ind-funktion, både for brugeren og for venues. På den måde kan jeg skjule tilmeldinger for brugerne, så de kun kan se antal tilmeldinger, frem for at vise brugeres data på en offentlig side.",

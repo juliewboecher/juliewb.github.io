@@ -8,6 +8,10 @@
   transition: transform 0.2s ease;
 }
 
+.project-card span {
+  font-family: "Patrick Hand";
+}
+
 .project-card:hover {
   transform: translateY(-5px);
 }
